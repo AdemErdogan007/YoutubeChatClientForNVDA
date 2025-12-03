@@ -1,0 +1,13 @@
+YOUTUBE DATA API v3 ANAHTARI NASIL ALINIR?
+
+1. Google Cloud Console adresine gidin (console.cloud.google.com) ve Google hesabınızla giriş yapın.
+2. Üst kısımdan 'Select a Project' diyerek 'New Project' butonuna basın ve projeye bir isim verip oluşturun.
+3. Sol menüden 'APIs & Services' > 'Library' kısmına gidin.
+4. Arama kutusuna 'YouTube Data API v3' yazın.
+5. Çıkan sonuca tıklayın ve 'Enable' (Etkinleştir) butonuna basın.
+6. Etkinleştirdikten sonra 'Credentials' (Kimlik Bilgileri) sekmesine gidin.
+7. 'Create Credentials' butonuna tıklayın ve 'API Key' seçeneğini seçin.
+8. Ekranda 'AIza' ile başlayan uzun bir kod belirecek. Bu sizin API anahtarınızdır.
+9. Bu anahtarı kopyalayıp eklentideki ilgili alana yapıştırın.
+
+Not: API anahtarınızı başkalarıyla paylaşmayın.

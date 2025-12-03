@@ -1,0 +1,10 @@
+Youtube Canlı Sohbet İstemcisi
+Sürüm: 1.6
+
+Bu eklenti, görme engelli kullanıcıların YouTube canlı yayınlarındaki sohbet akışını, Super Chat bağışlarını ve üyelik bildirimlerini erişilebilir bir şekilde takip etmelerini sağlar.
+
+Geliştirici: ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK).
+Web Site: https://erdoganteknoloji.com/
+İletişim: erdoganteknoloji.com@gmail.com
+
+Bu yazılım açık kaynak kodludur ve GPL v2 lisansı ile dağıtılmaktadır.

@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YoutubeChatClient 1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-30 12:00+0300\n"
+"PO-Revision-Date: 2025-11-30 12:00+0300\n"
+"Last-Translator: Adem Erdogan\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Youtube Canlı Sohbet İstemcisi"
+msgstr "Youtube Canlı Sohbet İstemcisi"
+
+msgid "YouTube canlı sohbet penceresini açar"
+msgstr "YouTube canlı sohbet penceresini açar"
+
+msgid "YouTube Canlı Sohbet arayüzünü başlatır."
+msgstr "YouTube Canlı Sohbet arayüzünü başlatır."
+
+msgid "API Anahtarı bulunamadı. Ayarlar menüsüne gidip bir anahtar girmek ister misiniz?"
+msgstr "API Anahtarı bulunamadı. Ayarlar menüsüne gidip bir anahtar girmek ister misiniz?"
+
+msgid "Eksik Yapılandırma"
+msgstr "Eksik Yapılandırma"
+
+msgid "Ayarlar - Youtube Canlı Sohbet İstemcisi"
+msgstr "Ayarlar - Youtube Canlı Sohbet İstemcisi"
+
+msgid "API Yapılandırması"
+msgstr "API Yapılandırması"
+
+msgid "Google API Anahtarı:"
+msgstr "Google API Anahtarı:"
+
+msgid "Göster"
+msgstr "Göster"
+
+msgid "Gizle (*)"
+msgstr "Gizle (*)"
+
+msgid "Sil"
+msgstr "Sil"
+
+msgid "API Anahtarı Nasıl Alınır?"
+msgstr "API Anahtarı Nasıl Alınır?"
+
+msgid "Genel Ayarlar"
+msgstr "Genel Ayarlar"
+
+msgid "Sohbet mesajlarında zaman damgasını göster"
+msgstr "Sohbet mesajlarında zaman damgasını göster"
+
+msgid "Yeni gelen mesajları seslendir"
+msgstr "Yeni gelen mesajları seslendir"
+
+msgid "Yeni mesaj geldiğinde odağı son mesaja taşı"
+msgstr "Yeni mesaj geldiğinde odağı son mesaja taşı"
+
+msgid "API İstek Süresi (Saniye):"
+msgstr "API İstek Süresi (Saniye):"
+
+msgid "Ayarları Kaydet"
+msgstr "Ayarları Kaydet"
+
+msgid "Varsayılana Döndür"
+msgstr "Varsayılana Döndür"
+
+msgid "Ayarlar kaydedildi."
+msgstr "Ayarlar kaydedildi."
+
+msgid "Youtube Canlı Sohbet İstemcisi - v{version}"
+msgstr "Youtube Canlı Sohbet İstemcisi - v{version}"
+
+msgid "Seçenekler"
+msgstr "Seçenekler"
+
+msgid "YouTube Canlı Yayın URL'si:"
+msgstr "YouTube Canlı Yayın URL'si:"
+
+msgid "Sohbet Akışını Başlat"
+msgstr "Sohbet Akışını Başlat"
+
+msgid "Sohbet Akışını Durdur"
+msgstr "Sohbet Akışını Durdur"
+
+msgid "Sohbet Akışı:"
+msgstr "Sohbet Akışı:"
+
+msgid "Hazır."
+msgstr "Hazır."
+
+msgid "Ayarlar"
+msgstr "Ayarlar"
+
+msgid "Sürüm Geçmişi"
+msgstr "Sürüm Geçmişi"
+
+msgid "Nasıl Kullanılır?"
+msgstr "Nasıl Kullanılır?"
+
+msgid "Eklenti Hakkında"
+msgstr "Eklenti Hakkında"
+
+msgid "Web Sitesini Ziyaret Et"
+msgstr "Web Sitesini Ziyaret Et"
+
+msgid "API Anahtarı eksik. Lütfen ayarlardan giriniz."
+msgstr "API Anahtarı eksik. Lütfen ayarlardan giriniz."
+
+msgid "Geçersiz YouTube URL'si."
+msgstr "Geçersiz YouTube URL'si."
+
+msgid "Durduruldu."
+msgstr "Durduruldu."
+
+msgid "Bağlanıyor..."
+msgstr "Bağlanıyor..."
+
+msgid "Canlı sohbet bulunamadı."
+msgstr "Canlı sohbet bulunamadı."
+
+msgid "Sohbet Bağlandı."
+msgstr "Sohbet Bağlandı."
+
+msgid "Yeni Üye Oldu!"
+msgstr "Yeni Üye Oldu!"
+
+msgid "[YENİ ÜYELİK]"
+msgstr "[YENİ ÜYELİK]"
+
+msgid "[ÜYELİK {month}. AY]"
+msgstr "[ÜYELİK {month}. AY]"
+
+msgid "Kapat"
+msgstr "Kapat"
+
+msgid "Google Cloud Console'u Tarayıcıda Aç"
+msgstr "Google Cloud Console'u Tarayıcıda Aç"
+
+msgid "API Anahtarı Alma Rehberi"
+msgstr "API Anahtarı Alma Rehberi"
+
+msgid "Copyright © {year}, ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK)"
+msgstr "Copyright © {year}, ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK)"

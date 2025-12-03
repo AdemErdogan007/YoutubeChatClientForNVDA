@@ -1,0 +1,37 @@
+v1.6
+- YENİ ÖZELLİK: Tam kapsamlı çoklu dil desteği (Türkçe, İngilizce ve Almanca) eklendi.
+- İYİLEŞTİRME: Eklenti dilini NVDA'nın diline göre otomatik ve hatasız algılayan gelişmiş dil yönetim sistemi entegre edildi.
+- DÜZELTME: Pencerelerin bazen ekranda görünmemesine neden olan bellek yönetimi (Garbage Collection) sorunu giderildi.
+- DÜZELTME: Kod mimarisindeki döngüsel içe aktarma (Circular Import) hataları tamamen temizlendi.
+
+v1.5.2
+- GÜVENLİK: Ayar dosyası (settings.json), veri güvenliği için NVDA'nın kullanıcı yapılandırma klasörüne taşındı.
+- İYİLEŞTİRME: Ayar dosyası artık okunabilir (girintili) JSON formatında kaydediliyor.
+
+v1.5
+- MİMARİ DEĞİŞİKLİĞİ: Kod yapısı tek dosyadan çıkarılıp, profesyonel modüler bir yapıya geçirildi.
+- YENİ ÖZELLİK: "Seçenekler" menüsü eklendi.
+- YENİ ÖZELLİK: Ayarlar gelişmiş bir pencereye taşındı.
+- GÜVENLİK: API Anahtarı giriş alanı maskelendi ve "Göster/Gizle" butonu eklendi.
+- YENİ ÖZELLİK: "Yeni mesaj geldiğinde odağı son mesaja taşı" ayarı eklendi.
+- YENİ ÖZELLİK: "Varsayılana Döndür" butonu eklendi.
+- KOLAYLIK: API Rehberi penceresine tek tıkla "Google Cloud Console'u Tarayıcıda Aç" butonu eklendi.
+
+v1.4
+- Pencere taşıma ve boyutlandırma sorunu giderildi.
+- Sohbet listesine yatay kaydırma çubuğu eklendi.
+- Mesajlarda zaman damgasını açıp kapatma ayarı eklendi.
+
+v1.3
+- Sürüm geçmişi özelliği eklendi.
+
+v1.2
+- Web sitesine yönlendiren telif hakkı butonu eklendi.
+- Dinamik yıl hesaplama özelliği eklendi.
+
+v1.1
+- Super Chat, Super Sticker ve Üyelik bildirimleri desteği eklendi.
+- Ayarları hatırlama özelliği eklendi.
+
+v1.0
+- İlk sürüm yayınlandı.

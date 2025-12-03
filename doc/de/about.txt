@@ -1,0 +1,10 @@
+YouTube Live-Chat-Client
+Version: 1.6
+
+Dieses Add-on ermöglicht es sehbehinderten Benutzern, Chat-Nachrichten, Super Chat-Spenden und Mitgliedschaftsmeldungen in YouTube-Livestreams über eine barrierefreie Schnittstelle zu verfolgen.
+
+Entwickler: ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK).
+Webseite: https://erdoganteknoloji.com/
+Kontakt: erdoganteknoloji.com@gmail.com
+
+Diese Software ist Open Source und wird unter der GPL v2-Lizenz vertrieben.

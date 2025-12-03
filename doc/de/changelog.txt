@@ -1,0 +1,43 @@
+v1.6
+- NEUE FUNKTION: Vollständige Mehrsprachenunterstützung (Türkisch, Englisch und Deutsch) hinzugefügt.
+- VERBESSERUNG: Ein fortschrittliches Sprachverwaltungssystem wurde integriert, das die Sprache des Add-ons automatisch und fehlerfrei basierend auf den NVDA-Einstellungen erkennt.
+- KORREKTUR: Probleme bei der Speicherverwaltung (Garbage Collection), die dazu führten, dass Fenster manchmal nicht angezeigt wurden, wurden behoben.
+- KORREKTUR: Fehler durch zirkuläre Importe (Circular Import) in der Codearchitektur wurden vollständig beseitigt.
+
+v1.5.2
+- SICHERHEIT: Die Einstellungsdatei (settings.json) wurde zur besseren Datensicherheit in den Benutzerkonfigurationsordner von NVDA (%AppData%\nvda) verschoben.
+- VERBESSERUNG: Die Einstellungsdatei wird nun in einem für Menschen lesbaren (eingerückten) JSON-Format gespeichert.
+
+v1.5
+- ARCHITEKTURÄNDERUNG: Die Codestruktur wurde von einer einzelnen Datei auf ein professionelles modulares Paketsystem umgestellt.
+- NEUE FUNKTION: Menü "Optionen" zum Hauptbildschirm hinzugefügt, das Zugriff auf Einstellungen, Verlauf und Anleitungen bietet.
+- NEUE FUNKTION: Einstellungen wurden in ein eigenes, erweitertes Fenster verschoben.
+- SICHERHEIT: Eingabefeld für den API-Schlüssel maskiert (Sternchen) und eine funktionierende "Anzeigen/Verbergen"-Schaltfläche hinzugefügt.
+- NEUE FUNKTION: Einstellung "Fokus auf letzte Nachricht verschieben, wenn eine neue Nachricht eintrifft" hinzugefügt. (Verhindert das Verrutschen der Liste beim Lesen alter Nachrichten).
+- NEUE FUNKTION: Schaltfläche "Auf Standardwerte zurücksetzen" für Einstellungen hinzugefügt.
+- KOMFORT: Schaltfläche "Google Cloud Console im Browser öffnen" zum API-Leitfaden hinzugefügt.
+- KORREKTUR: Problem behoben, bei dem das Hauptfenster nach dem Speichern der Einstellungen bei der ersten Installation nicht automatisch geöffnet wurde.
+- VERBESSERUNG: Copyright- und Website-Link-Schaltfläche unter allen Fenstern fixiert.
+
+v1.4
+- Probleme beim Ändern der Größe und Verschieben von Fenstern behoben.
+- Sichergestellt, dass Informationsnachrichten in die nächste Zeile umbrechen, wenn sie nicht in das Fenster passen.
+- Horizontale Bildlaufleiste zur Chatliste hinzugefügt.
+- Einstellung zum Ein-/Ausschalten von Zeitstempeln in Nachrichten hinzugefügt.
+
+v1.3
+- Versionsverlauf-Funktion hinzugefügt.
+- Name der Kategorie für Eingabegesten aktualisiert.
+
+v1.2
+- Schaltfläche zur Weiterleitung auf die Website hinzugefügt.
+- Funktion zur dynamischen Jahresberechnung hinzugefügt.
+- Versionsnummer zum Fenstertitel hinzugefügt.
+
+v1.1
+- Unterstützung für Super Chat, Super Sticker und Mitgliedschaftsbenachrichtigungen hinzugefügt.
+- Funktion zum Speichern von Einstellungen hinzugefügt.
+- Anleitung zum Abrufen des API-Schlüssels hinzugefügt.
+
+v1.0
+- Erstveröffentlichung.

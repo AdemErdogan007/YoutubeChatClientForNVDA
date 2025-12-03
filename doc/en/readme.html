@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			YouTube Live Chat Client - Help 
+		</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1>
+				YouTube Live Chat Client
+			</h1>
+			<p class="intro">
+				This plugin allows you to track chat messages, Super Chat donations, and membership events in YouTube live broadcasts with an accessible interface.
+			</p>
+
+			<div class="card">
+				<h2>
+					Installation and First Steps
+				</h2>
+				<ol>
+					<li>
+						Restart NVDA after installing the plug-in.
+					</li>
+					<li>
+						Run the plug-in by pressing <kbd> NVDA + Shift + CTRL + Y </kbd> or from the NVDA Tools menu.
+					</li>
+					<li>
+						You will be asked to enter <strong>API Key</strong> at first startup. It will automatically redirect you to the Settings window.
+					</li>
+					<li>
+						Paste the YouTube Data v3 API key you received from the Google Cloud Console here and press the <strong> "Save Settings"</strong> button.
+					</li>
+				</ol>
+			</div>
+
+			<div class="card">
+				<h2>
+					Main Window Usage
+				</h2>
+				<ul>
+					<li>
+						<strong> URL Field: </strong> Paste the link of the publication you want to follow here.
+					</li>
+					<li>
+						<strong> Options Menu: </strong> You can access Settings, Version History, API Guide, About and Website buttons from this menu.
+					</li>
+					<li>
+						<strong> Start/Stop: </strong> Controls the chat flow.
+					</li>
+					<li>
+						<strong> Chat List: </strong> Messages fall here. You can navigate with the arrow keys.
+					</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<h2>
+					Settings Menu
+				</h2>
+				<ul>
+					<li>
+						<strong> API Key: </strong> Appears with an asterisk for security reasons. You can see the content with the "Show" button and clear it with the "Delete" button.
+					</li>
+					<li>
+						<strong> Timestamp: </strong> Determines whether the time will be written at the beginning of the messages.
+					</li>
+					<li>
+						<strong> Automatic Voice: </strong> Determines whether NVDA will automatically read a new message when it arrives.
+					</li>
+					<li>
+						<strong>Move Focus to Last Message:</strong>
+						<span class="important"> Important! </span> If you are reviewing old messages, turn this off.
+						<br>
+						If it is on, the cursor moves to the bottom with each new message.
+					</li>
+					<li>
+						<strong> API Request Duration: </strong> Determines how many seconds data will be retrieved from YouTube (Default 10 seconds).
+					</li>
+					<li>
+						<strong>Reset to Defaults:</strong>Resets all settings to initial setup.
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer">
+				<p>
+					<strong> Developer: </strong> ADEM ERDOĞAN (ERDOĞAN TECHNOLOGY AND PROGRAMMING).</p>
+				<p>
+					<a href="https://erdoganteknoloji.com/" class="copyright-link" target=" blank">
+						Copyright © <span id="copyright-year"> 2025 </span> ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK) Tüm Hakları Saklıdır.
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<script>
+			const currentYear = new Date().getFullYear();
+			const baseYear = 2025;
+			const yearSpan = document.getElementById('copyright-year');
+			
+			if (currentYear > baseYear)
+			{
+				yearSpan.textContent = baseYear + " / " + currentYear;
+			}
+			else
+			{
+				yearSpan.textContent = baseYear;
+			}
+		</script>
+	</body>
+</html>

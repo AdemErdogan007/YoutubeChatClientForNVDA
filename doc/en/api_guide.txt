@@ -1,0 +1,13 @@
+HOW TO GET A YOUTUBE DATA API v3 KEY?
+
+1. Go to Google Cloud Console (console.cloud.google.com) and sign in with your Google account.
+2. Click 'Select a Project' at the top, then click 'New Project', give it a name, and create it.
+3. From the left menu, go to 'APIs & Services' > 'Library'.
+4. Type 'YouTube Data API v3' in the search box.
+5. Click on the result and click the 'Enable' button.
+6. Once enabled, go to the 'Credentials' tab.
+7. Click 'Create Credentials' and select 'API Key'.
+8. A long code starting with 'AIza' will appear. This is your API key.
+9. Copy this key and paste it into the relevant field in the add-on settings.
+
+Note: Do not share your API key with others.

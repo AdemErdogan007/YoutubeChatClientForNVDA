@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YoutubeChatClient 1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-30 12:00+0300\n"
+"PO-Revision-Date: 2025-11-30 12:00+0300\n"
+"Last-Translator: Adem Erdogan\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Youtube Canlı Sohbet İstemcisi"
+msgstr "YouTube Live-Chat-Client"
+
+msgid "YouTube canlı sohbet penceresini açar"
+msgstr "Öffnet das YouTube-Live-Chat-Fenster"
+
+msgid "YouTube Canlı Sohbet arayüzünü başlatır."
+msgstr "Startet die YouTube-Live-Chat-Oberfläche."
+
+msgid "API Anahtarı bulunamadı. Ayarlar menüsüne gidip bir anahtar girmek ister misiniz?"
+msgstr "API-Schlüssel nicht gefunden. Möchten Sie zu den Einstellungen gehen und einen Schlüssel eingeben?"
+
+msgid "Eksik Yapılandırma"
+msgstr "Fehlende Konfiguration"
+
+msgid "Ayarlar - Youtube Canlı Sohbet İstemcisi"
+msgstr "Einstellungen - YouTube Live-Chat-Client"
+
+msgid "API Yapılandırması"
+msgstr "API-Konfiguration"
+
+msgid "Google API Anahtarı:"
+msgstr "Google API-Schlüssel:"
+
+msgid "Göster"
+msgstr "Anzeigen"
+
+msgid "Gizle (*)"
+msgstr "Verbergen (*)"
+
+msgid "Sil"
+msgstr "Löschen"
+
+msgid "API Anahtarı Nasıl Alınır?"
+msgstr "Wie erhalte ich einen API-Schlüssel?"
+
+msgid "Genel Ayarlar"
+msgstr "Allgemeine Einstellungen"
+
+msgid "Sohbet mesajlarında zaman damgasını göster"
+msgstr "Zeitstempel in Chat-Nachrichten anzeigen"
+
+msgid "Yeni gelen mesajları seslendir"
+msgstr "Neue Nachrichten automatisch vorlesen"
+
+msgid "Yeni mesaj geldiğinde odağı son mesaja taşı"
+msgstr "Fokus auf die letzte Nachricht verschieben, wenn eine neue eintrifft"
+
+msgid "API İstek Süresi (Saniye):"
+msgstr "API-Abfrageintervall (Sekunden):"
+
+msgid "Ayarları Kaydet"
+msgstr "Einstellungen speichern"
+
+msgid "Varsayılana Döndür"
+msgstr "Auf Standardwerte zurücksetzen"
+
+msgid "Ayarlar kaydedildi."
+msgstr "Einstellungen gespeichert."
+
+msgid "Youtube Canlı Sohbet İstemcisi - v{version}"
+msgstr "YouTube Live-Chat-Client - v{version}"
+
+msgid "Seçenekler"
+msgstr "Optionen"
+
+msgid "YouTube Canlı Yayın URL'si:"
+msgstr "YouTube-Livestream-URL:"
+
+msgid "Sohbet Akışını Başlat"
+msgstr "Chat-Stream starten"
+
+msgid "Sohbet Akışını Durdur"
+msgstr "Chat-Stream stoppen"
+
+msgid "Sohbet Akışı:"
+msgstr "Chat-Verlauf:"
+
+msgid "Hazır."
+msgstr "Bereit."
+
+msgid "Ayarlar"
+msgstr "Einstellungen"
+
+msgid "Sürüm Geçmişi"
+msgstr "Versionsverlauf"
+
+msgid "Nasıl Kullanılır?"
+msgstr "Wie benutzt man es?"
+
+msgid "Eklenti Hakkında"
+msgstr "Über das Add-on"
+
+msgid "Web Sitesini Ziyaret Et"
+msgstr "Webseite besuchen"
+
+msgid "API Anahtarı eksik. Lütfen ayarlardan giriniz."
+msgstr "API-Schlüssel fehlt. Bitte in den Einstellungen eingeben."
+
+msgid "Geçersiz YouTube URL'si."
+msgstr "Ungültige YouTube-URL."
+
+msgid "Durduruldu."
+msgstr "Gestoppt."
+
+msgid "Bağlanıyor..."
+msgstr "Verbinden..."
+
+msgid "Canlı sohbet bulunamadı."
+msgstr "Live-Chat nicht gefunden."
+
+msgid "Sohbet Bağlandı."
+msgstr "Chat verbunden."
+
+msgid "Yeni Üye Oldu!"
+msgstr "Ist neues Mitglied geworden!"
+
+msgid "[YENİ ÜYELİK]"
+msgstr "[NEUE MITGLIEDSCHAFT]"
+
+msgid "[ÜYELİK {month}. AY]"
+msgstr "[MITGLIEDSCHAFT MONAT {month}]"
+
+msgid "Kapat"
+msgstr "Schließen"
+
+msgid "Google Cloud Console'u Tarayıcıda Aç"
+msgstr "Google Cloud Console im Browser öffnen"
+
+msgid "API Anahtarı Alma Rehberi"
+msgstr "Anleitung für API-Schlüssel"
+
+msgid "Copyright © {year}, ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK)"
+msgstr "Copyright © {year}, ADEM ERDOĞAN (ERDOĞAN TEKNOLOJI VE PROGRAMCILIK)"

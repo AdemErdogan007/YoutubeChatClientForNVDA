@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			YouTube Live-Chat-Client - Hilfe
+		</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1>
+				YouTube Live-Chat-Client
+			</h1>
+			<p class="intro">
+				Dieses Add-on ermöglicht es Ihnen, Chat-Nachrichten, Super Chat-Spenden und Mitgliedschaftsereignisse in YouTube-Livestreams über eine barrierefreie Schnittstelle zu verfolgen.
+			</p>
+
+			<div class="card">
+				<h2>
+					Installation und erste Schritte
+				</h2>
+				<ol>
+					<li>
+						Starten Sie NVDA nach der Installation des Add-ons neu.
+					</li>
+					<li>
+						Starten Sie das Add-on, indem Sie die Tasten <kbd> NVDA + Umschalt + STRG + Y </kbd> drücken oder es über das NVDA-Menü "Extras" aufrufen.
+					</li>
+					<li>
+						Beim ersten Start werden Sie aufgefordert, einen <strong> API-Schlüssel </strong> einzugeben. Sie werden automatisch zum Einstellungsfenster weitergeleitet.
+					</li>
+					<li>
+						Fügen Sie Ihren YouTube Data v3 API-Schlüssel von der Google Cloud Console hier ein und klicken Sie auf die Schaltfläche <strong> "Einstellungen speichern" </strong>.
+					</li>
+				</ol>
+			</div>
+
+			<div class="card">
+				<h2>
+					Verwendung des Hauptfensters
+				</h2>
+				<ul>
+					<li>
+						<strong> URL-Feld: </strong> Fügen Sie hier den Link des Streams ein, den Sie verfolgen möchten.
+					</li>
+					<li>
+						<strong> Menü "Optionen": </strong> Über dieses Menü können Sie auf Einstellungen, Versionsverlauf, API-Leitfaden, Über und die Website zugreifen.
+					</li>
+					<li>
+						<strong> Start/Stopp: </strong> Steuert den Chat-Verlauf (Stream).
+					</li>
+					<li>
+						<strong> Chat-Liste: </strong> Nachrichten erscheinen hier. Sie können mit den Pfeiltasten darin navigieren.
+					</li>
+				</ul>
+			</div>
+
+			<div class="card">
+				<h2>
+					Einstellungsmenü
+				</h2>
+				<ul>
+					<li>
+						<strong> API-Schlüssel: </strong> Wird aus Sicherheitsgründen mit Sternchen angezeigt. Sie können den Inhalt mit der Schaltfläche "Anzeigen" sehen oder mit "Löschen" entfernen.
+					</li>
+					<li>
+						<strong> Zeitstempel: </strong> Legt fest, ob die Uhrzeit am Anfang der Nachrichten angezeigt wird.
+					</li>
+					<li>
+						<strong> Automatisches Vorlesen: </strong> Legt fest, ob NVDA neue Nachrichten automatisch vorliest, sobald sie eintreffen.
+					</li>
+					<li>
+						<strong> Fokus auf letzte Nachricht verschieben: </strong>
+						<span class="important"> Wichtig! </span> Schalten Sie dies aus, wenn Sie alte Nachrichten durchsehen möchten.
+						<br>
+						Wenn aktiviert, springt der Cursor bei jeder neuen Nachricht nach ganz unten.
+					</li>
+					<li>
+						<strong> API-Abfrageintervall: </strong> Legt fest, alle wie viele Sekunden Daten von YouTube abgerufen werden (Standard ist 10 Sekunden).
+					</li>
+					<li>
+						<strong> Auf Standardwerte zurücksetzen: </strong> Setzt alle Einstellungen auf den Zustand der Erstinstallation zurück.
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer">
+				<p>
+					<strong> Entwickler: </strong> ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK).
+				</p>
+				<p>
+					<a href="https://erdoganteknoloji.com/" class="copyright-link" target="_blank">
+						Copyright © <span id="copyright-year"> 2025 </span> ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK) Alle Rechte vorbehalten.
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<script>
+			const currentYear = new Date().getFullYear();
+			const baseYear = 2025;
+			const yearSpan = document.getElementById('copyright-year');
+			
+			if (currentYear > baseYear)
+			{
+				yearSpan.textContent = baseYear + " / " + currentYear;
+			}
+			else
+			{
+				yearSpan.textContent = baseYear;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+YouTube Live Chat Client
+Version: 1.6
+
+This add-on allows visually impaired users to track chat messages, Super Chat donations, and membership notifications in YouTube live streams via an accessible interface.
+
+Developer: ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK).
+Website: https://erdoganteknoloji.com/
+Contact: erdoganteknoloji.com@gmail.com
+
+This software is open source and distributed under the GPL v2 license.

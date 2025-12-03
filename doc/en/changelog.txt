@@ -1,0 +1,37 @@
+v1.6
+- NEW FEATURE: Full multi-language support (Turkish, English, and German) added.
+- IMPROVEMENT: Integrated an advanced language management system that accurately detects the add-on language based on NVDA settings.
+- FIX: Resolved memory management (Garbage Collection) issues that caused windows not to appear.
+- FIX: Completely removed circular import errors in the code architecture.
+
+v1.5.2
+- SECURITY: Settings file (settings.json) moved to NVDA's user configuration folder for better data security.
+- IMPROVEMENT: Settings file is now saved in a readable (indented) JSON format.
+
+v1.5
+- ARCHITECTURE CHANGE: Code structure moved to a professional modular package system.
+- NEW FEATURE: Added "Options" menu.
+- NEW FEATURE: Settings moved to an advanced window.
+- SECURITY: API Key input masked and "Show/Hide" button added.
+- NEW FEATURE: Added "Move focus to last message" option.
+- NEW FEATURE: Added "Reset to Defaults" button.
+- CONVENIENCE: Added "Open Google Cloud Console in Browser" button to the API Guide.
+
+v1.4
+- Fixed window resizing and moving issues.
+- Added horizontal scrollbar to the chat list.
+- Added option to toggle timestamps in messages.
+
+v1.3
+- Added Version History feature.
+
+v1.2
+- Added website link button.
+- Added dynamic year calculation.
+
+v1.1
+- Added support for Super Chat, Super Sticker, and Membership events.
+- Added settings persistence.
+
+v1.0
+- Initial release.

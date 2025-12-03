@@ -1,0 +1,13 @@
+SO ERHALTEN SIE EINEN YOUTUBE DATA API v3 SCHLÜSSEL
+
+1. Gehen Sie zur Google Cloud Console (console.cloud.google.com) und melden Sie sich mit Ihrem Google-Konto an.
+2. Klicken Sie oben auf "Ein Projekt auswählen" (Select a Project), dann auf "Neues Projekt" (New Project), geben Sie ihm einen Namen und erstellen Sie es.
+3. Gehen Sie im linken Menü zu "APIs & Dienste" (APIs & Services) > "Bibliothek" (Library).
+4. Geben Sie "YouTube Data API v3" in das Suchfeld ein.
+5. Klicken Sie auf das Ergebnis und dann auf die Schaltfläche "Aktivieren" (Enable).
+6. Sobald aktiviert, gehen Sie zum Reiter "Anmeldedaten" (Credentials).
+7. Klicken Sie auf "Anmeldedaten erstellen" (Create Credentials) und wählen Sie "API-Schlüssel" (API Key).
+8. Ein langer Code, der mit "AIza" beginnt, wird angezeigt. Das ist Ihr API-Schlüssel.
+9. Kopieren Sie diesen Schlüssel und fügen Sie ihn in das entsprechende Feld in den Add-on-Einstellungen ein.
+
+Hinweis: Teilen Sie Ihren API-Schlüssel nicht mit anderen.

@@ -1,0 +1,206 @@
+/* Modern Dark Theme CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root
+{
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --primary-gradient: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    --accent-color: #4facfe;
+    --important-color: #ff6b6b;
+    --border-color: #333;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for centering content */
+.container
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Headings */
+h1
+{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.intro
+{
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+h2
+{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+/* Card Style for Sections */
+.card
+{
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease;
+}
+
+.card:hover
+{
+    transform: translateY(-2px);
+    border-color: #444;
+}
+
+/* Lists */
+ol, ul
+{
+    padding-left: 20px;
+}
+
+li
+{
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+/* Important Text */
+.important
+{
+    color: var(--important-color);
+    font-weight: 700;
+    background: rgba(255, 107, 107, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Strong Tags / Labels */
+strong
+{
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Keyboard Shortcuts styling (Assuming you change HTML slightly or use strong) */
+kbd, strong
+{
+    font-family: inherit;
+}
+
+/* If you use <kbd> tag in HTML for shortcuts */
+kbd
+{
+    background-color: #333;
+    border-radius: 4px;
+    border: 1px solid #444;
+    box-shadow: 0 2px 0 #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 4px 8px;
+    white-space: nowrap;
+    font-family: consolas, monospace;
+}
+
+/* Footer */
+.footer
+{
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.footer p
+{
+    margin: 5px 0;
+}
+
+/* Footer Link Styling */
+.footer a.copyright-link
+{
+    text-decoration: none;
+    color: inherit; /* Üst elementin rengini (gri) alır */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer a.copyright-link:hover
+{
+    color: var(--accent-color); /* Fare üzerine gelince tema rengini alır (Mavi) */
+    text-shadow: 0 0 8px rgba(79, 172, 254, 0.4); /* Hafif bir parlama efekti */
+    cursor: pointer;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #444;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: var(--accent-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px)
+{
+    h1
+	{
+        font-size: 2rem;
+    }
+    
+    .card
+	{
+        padding: 15px;
+    }
+    
+    body
+	{
+        padding: 10px;
+    }
+}
