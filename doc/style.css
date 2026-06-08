@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap'); /* Google Fonts üzerinden 'Inter' yazı tipini dökümana dahil ediyoruz. */
+
+:root /* Tüm dökümanda kullanılacak olan renk ve tasarım değişkenlerini Koyu Tema (Dark Mode) varsayılanı olarak tanımlıyoruz. */
+{
+    --bg-color: #121212; /* Genel arka plan rengi için çok koyu gri tonu belirliyoruz. */
+    --card-bg: #1e1e1e; /* Kart yapıları için bir tık daha açık koyu gri tonu belirliyoruz. */
+    --text-color: #e0e0e0; /* Ana metinler için yüksek kontrastlı açık gri tonu belirliyoruz. */
+    --text-muted: #a0a0a0; /* Daha az önemli veya açıklama metinleri için soluk gri tonu belirliyoruz. */
+    --primary-gradient: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); /* Başlıklar için mavi tonlarında modern bir degrade tanımlıyoruz. */
+    --accent-color: #4facfe; /* Vurgu rengi olarak canlı mavi tonu belirliyoruz. */
+    --important-color: #ff6b6b; /* Önemli uyarılar için kırmızımsı tonu belirliyoruz. */
+    --border-color: #333333; /* Kenarlıklar için koyu gri tonu belirliyoruz. */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Elemanlara derinlik katmak için koyu gölge efekti tanımlıyoruz. */
+    --kbd-bg: #333333; /* Klavye kısayolu arka planı için koyu gri tonu veriyoruz. */
+    --kbd-border: #444444; /* Klavye kısayolu kenarlığı için belirgin gri tonu veriyoruz. */
+    --kbd-text: #ffffff; /* Klavye kısayolu metni için beyaz renk atıyoruz. */
+    
+    /* KOYU TEMA BUTON DEĞİŞKENLERİ */
+    --btn-bg: #121212; /* Sosyal medya butonlarının yazılı kısmı için koyu arka plan atıyoruz. */
+    --btn-border: #333333; /* Koyu temada butonların kenarlık rengini genel kenarlıkla aynı yapıyoruz. */
+    --btn-text: #e0e0e0; /* Koyu temada butonların yazısı açık gri oluyor. */
+    --hover-mavi: #007bb5; /* Hover durumunda kullanılacak o kurumsal Web Sitesi mavisini değişkene atıyoruz. */
+}
+
+@media (prefers-color-scheme: light) /* İşletim sistemi Açık Tema'ya alındığında, kök değişkenleri otomatik olarak eziyoruz. */
+{
+    :root /* Açık tema değişkenlerini atayarak kod tekrarı yapmadan tüm siteyi tek hamlede açık temaya çeviriyoruz. */
+    {
+        --bg-color: #e6f0fa; /* Göz yormayan şık ve yumuşak bir buz mavisi tonu atıyoruz. */
+        --card-bg: #ffffff; /* Kartların arka plandan kopup öne çıkması ve şık durması için tam beyaz yapıyoruz. */
+        --text-color: #1a2a3a; /* Okunabilirliği artırmak için metinleri siyah yerine koyu gece mavisine çeviriyoruz. */
+        --text-muted: #4a5c6e; /* Soluk metinleri orta koyulukta bir lacivert/gri yapıyoruz. */
+        --border-color: #c0d4eb; /* Kart kenarlıkları için arka planla uyumlu ince mavi/gri yapıyoruz. */
+        --shadow: 0 4px 6px rgba(0, 50, 100, 0.05); /* Gölgeleri daha yumuşak ve mavi tonuna uygun hale getiriyoruz. */
+        --kbd-bg: #d0e0f0; /* Klavye kısayolu arka planı için açık mavi/gri atıyoruz. */
+        --kbd-border: #b0c8e0; /* Klavye kısayolu kenarlığını belirliyoruz. */
+        --kbd-text: #000000; /* Klavye kısayolu metni için tam siyah veriyoruz. */
+        
+        /* AÇIK TEMA BUTON İYİLEŞTİRMELERİ */
+        --btn-bg: #007bb5; /* Açık temada butonun genel rengi o asil mavi tonu oluyor. */
+        --btn-border: #007bb5; /* Açık temada butonun kenarlığı da kendi mavi rengi oluyor. */
+        --btn-text: #ffffff; /* Mavi zemin üzerinde okunması için buton yazılarını tam beyaz yapıyoruz. */
+    }
+}
+
+body /* Sayfa gövdesinin temel görsel özelliklerini yapılandırıyoruz. */
+{
+    background-color: var(--bg-color); /* Arka plan rengini değişkenden alıyoruz. */
+    color: var(--text-color); /* Metin rengini değişkenden alıyoruz. */
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; /* Yazı tipini ayarlıyoruz. */
+    line-height: 1.7; /* Okunabilirlik için satır aralığını 1.7 katına çıkarıyoruz. */
+    margin: 0; /* Dış boşlukları sıfırlıyoruz. */
+    padding: 20px; /* İçeriklerin kenarlara yapışmaması için dolgu boşluğu veriyoruz. */
+}
+
+.container /* İçeriğin merkezde ve belirli bir genişlikte kalmasını sağlayan kapsayıcıyı tanımlıyoruz. */
+{
+    max-width: 960px; /* Yazıların kesilmemesi için ana genişliği 960px yapıyoruz. */
+    margin: 0 auto; /* Kapsayıcıyı sayfada yatay olarak ortalıyoruz. */
+    padding: 0 15px; /* Mobil cihazlar için yanlardan iç boşluk bırakıyoruz. */
+}
+
+.Baslik /* En üstte yer alan başlık, sürüm ve geliştirici bilgilerini saran alanı düzenliyoruz. */
+{
+    margin-bottom: 40px; /* Altındaki ana içerik alanı ile arasına belirgin bir mesafe bırakıyoruz. */
+}
+
+.Baslik p /* Başlık alanındaki paragrafların aralıklarını daraltıyoruz. */
+{
+    margin: 5px 0; /* Dikey boşlukları 5 piksel yapıyoruz. */
+    color: var(--text-muted); /* Bu alandaki standart yazıları soluk gri yapıyoruz. */
+}
+
+h1 /* Ana sayfa başlığının (H1) stilini tanımlıyoruz. */
+{
+    font-size: 2.5rem; /* Başlık yazı boyutunu büyütüyoruz. */
+    margin-bottom: 15px; /* Altındaki yazıyla arasına boşluk bırakıyoruz. */
+    background: var(--primary-gradient); /* Başlığa degrade efekti uyguluyoruz. */
+    -webkit-background-clip: text; /* Degrade rengini metnin içine maskeliyoruz. */
+    -webkit-text-fill-color: transparent; /* Metnin orijinal rengini şeffaf yapıyoruz. */
+    display: inline-block; /* Degrade görünmesi için satır içi blok seviyesine getiriyoruz. */
+    font-weight: 800; /* Yazıyı ekstra kalın yapıyoruz. */
+}
+
+.intro /* Sürüm bilgisinin yer aldığı paragrafın stilini tanımlıyoruz. */
+{
+    font-size: 1.1rem; /* Yazı boyutunu hafif büyütüyoruz. */
+    border-left: 4px solid var(--accent-color); /* Sol tarafa mavi bir vurgu çizgisi ekliyoruz. */
+    padding-left: 15px; /* Çizgi ile metin arasına boşluk veriyoruz. */
+}
+
+h2 /* Kartların içindeki alt başlıkların (H2) stilini tanımlıyoruz. */
+{
+    color: var(--accent-color); /* Metin rengini vurgu mavisi yapıyoruz. */
+    font-size: 1.5rem; /* Başlık boyutunu belirliyoruz. */
+    margin-top: 0; /* Üst boşluğu sıfırlıyoruz. */
+    margin-bottom: 20px; /* Altındaki içerikle mesafe bırakıyoruz. */
+    border-bottom: 1px solid var(--border-color); /* Altına ince bir ayraç çizgisi ekliyoruz. */
+    padding-bottom: 10px; /* Çizgi ile metin arasına iç boşluk veriyoruz. */
+}
+
+.card /* Bölüm kutularının (Card) genel stilini tanımlıyoruz. */
+{
+    background-color: var(--card-bg); /* Kartın arka plan rengini değişkenden alıyoruz. */
+    border-radius: 12px; /* Köşeleri yuvarlatıyoruz. */
+    padding: 25px; /* Kartın içine dolgu boşluğu veriyoruz. */
+    margin-bottom: 30px; /* Kartlar arasına dikey boşluk bırakıyoruz. */
+    box-shadow: var(--shadow); /* Karta gölge efekti ekliyoruz. */
+    border: 1px solid var(--border-color); /* Karta ince bir kenarlık ekliyoruz. */
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; /* Geçiş efekti hazırlıyoruz. */
+}
+
+.card:hover, .card:focus-within /* Fare üzerine geldiğinde veya TAB tuşu ile içine odaklanıldığında oluşacak etki. */
+{
+    transform: translateY(-2px); /* Kartı hafifçe yukarı kaldırıyoruz. */
+    border-color: var(--accent-color); /* Kenarlık rengini mavi yapıyoruz. */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Gölgeyi hafif belirginleştiriyoruz. */
+}
+
+ol, ul /* Liste yapılarının genel hizalamasını düzenliyoruz. */
+{
+    padding-left: 20px; /* Madde işaretleri için sol boşluk bırakıyoruz. */
+}
+
+li /* Liste öğelerinin stilini düzenliyoruz. */
+{
+    margin-bottom: 12px; /* Maddeler arasına dikey boşluk veriyoruz. */
+    color: var(--text-color); /* Liste metin rengini değişkenden alıyoruz. */
+}
+
+strong /* Strong etiketlerini tema rengiyle (mavi) eşitliyoruz. */
+{
+    color: var(--accent-color); /* Strong etiketlerinin rengini mavi yapıyoruz. */
+    font-weight: 600; /* Metni yarı kalın yapıyoruz. */
+}
+
+kbd /* Klavye kısayolları ve önemli etiketler için stil tanımlıyoruz. */
+{
+    background-color: var(--kbd-bg); /* Tuş arka planını değişkenden alıyoruz. */
+    border-radius: 4px; /* Köşeleri yuvarlıyoruz. */
+    border: 1px solid var(--kbd-border); /* Kenarlık ekliyoruz. */
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3); /* Alt gölge ekliyoruz. */
+    color: var(--kbd-text); /* Metin rengini değişkenden alıyoruz. */
+    display: inline-block; /* Satır içi blok nesnesi olarak hizalıyoruz. */
+    font-size: 0.85em; /* Yazı boyutunu küçültüyoruz. */
+    font-weight: 700; /* Metni kalın yapıyoruz. */
+    line-height: 1; /* Satır yüksekliğini sabitliyoruz. */
+    padding: 4px 8px; /* İç sınır boşluğunu veriyoruz. */
+    white-space: nowrap; /* Metnin alt satıra geçmesini önlüyoruz. */
+    font-family: consolas, monospace; /* Yazı tipini daktilo formunda yapıyoruz. */
+}
+
+a /* Sayfadaki tüm bağlantıların (A) alt çizgisini ve renklerini düzenliyoruz. */
+{
+    text-decoration: none; /* Linklerin alt çizgi görünümünü iptal ediyoruz. */
+    color: var(--text-color); /* Link metninin rengini genel metin rengiyle uyumlu yapıyoruz. */
+    transition: color 0.3s ease; /* Renk değişimi için geçiş veriyoruz. */
+    outline: none; /* Odaklanıldığında (TAB) tarayıcı varsayılan çizgisini kapatıyoruz. */
+}
+
+a:hover, a:focus /* Fareyle gelindiğinde veya TAB ile odaklanıldığında renk. */
+{
+    color: var(--accent-color); /* Link rengini maviye çeviriyoruz. */
+}
+
+.Alt-Bilgi /* Footer görevi gören alanı kapsayan dış kutu. */
+{
+    margin-top: 50px; /* Üstündeki içerik alanıyla mesafesini artırıyoruz. */
+}
+
+.social-buttons-container h2 /* Sosyal medya başlığını ortalıyoruz. */
+{
+    text-align: center; /* Başlığı tam ortaya alıyoruz. */
+    border-bottom: none; /* Alt çizgiyi siliyoruz. */
+    margin-bottom: 25px; /* Butonlara kadar mesafe koyuyoruz. */
+}
+
+.social-buttons /* Sosyal medya butonlarının dizileceği kapsayıcıyı tanımlıyoruz. */
+{
+    display: flex; /* Butonları esnek kutu mimarisiyle hizalıyoruz. */
+    flex-wrap: wrap; /* Butonların gerekirse alt satıra inmesine izin veriyoruz. */
+    justify-content: center; /* Butonları tam ortaya hizalıyoruz. */
+    gap: 12px; /* Butonlar arasına rahat bir boşluk bırakıyoruz. */
+}
+
+/* === YENİ VE PÜRÜZSÜZ BUTON TASARIMI === */
+
+.btn-social /* Sosyal medya butonu - DİKDÖRTGEN (Sağ) alanın genel stilini ayarlıyoruz. */
+{
+    background-color: var(--btn-bg); /* Butonun zemin rengini açık/koyu temaya uygun şekilde değişkenden alıyoruz. */
+    color: var(--btn-text); /* Metin rengini açık/koyu temaya uygun değişkenden alıyoruz. */
+    border: 1px solid var(--btn-border); /* Dış hatlarını belirginleştirmek için temaya uygun kenarlık atıyoruz. */
+    border-radius: 8px; /* Buton köşelerini estetikçe yuvarlatıyoruz. */
+    display: flex; /* İçindeki ikon ve metni yan yana yerleştirmek için esnek kutu açıyoruz. */
+    align-items: center; /* İçerikleri dikeyde mükemmel ortalıyoruz. */
+    padding: 0 10px 0 0; /* Sadece sağdan 10px boşluk veriyoruz. */
+    width: auto; /* USTANIN EMRİ: Buton genişliğini içindeki metne göre otomatik ayarlıyoruz (Taşma sorununu çözüyor). */
+    font-weight: 600; /* Yazıyı daha tok ve belirgin durması için kalınlaştırıyoruz. */
+    font-size: 0.8rem; /* Genişlik sorunu çözüldüğü için yazı boyutunu okunaklı hale getiriyoruz. */
+    white-space: nowrap; /* Metnin kendi içinde satır atlamasını engelliyoruz. */
+    transition: all 0.3s ease; /* Hover ve Focus animasyonu için pürüzsüz geçiş sağlıyoruz. */
+    height: 36px; /* İkonun karesiyle aynı yüksekliği atayarak kusursuz ikiye bölünme elde ediyoruz. */
+    outline: none; /* TAB ile odaklanıldığında çirkin varsayılan çerçeveyi iptal ediyoruz. */
+    position: relative; /* İçindeki pürüzleri örtmek için pozisyonu göreceli yapıyoruz. */
+}
+
+.btn-social i /* Sosyal medya butonu - KARE (Sol) alanın stilini ayarlıyoruz. */
+{
+    display: flex; /* İkonu karenin tam ortasına oturtmak için esnek kutu yapıyoruz. */
+    align-items: center; /* İkonu dikeyde ortalıyoruz. */
+    justify-content: center; /* İkonu yatayda ortalıyoruz. */
+    width: 36px; /* Karenin genişliğini butonun yüksekliğiyle birebir aynı yapıyoruz. */
+    height: 100%; /* Yüksekliği butonla %100 aynı yapıyoruz. */
+    flex-shrink: 0; /* İkon karesinin dar ekranlarda ezilmesini kesin olarak engelliyoruz. */
+    margin-right: 8px; /* Kare alan ile dikdörtgen alan arasına boşluk koyuyoruz. */
+    font-size: 1.1rem; /* İkon boyutunu estetik olarak büyütüyoruz. */
+    border-radius: 6px; /* USTANIN EMRİ: İkonların olduğu karenin TÜM köşelerini 6px yuvarlatıyoruz. */
+    transition: all 0.3s ease; /* Renk geçişlerini yumuşatıyoruz. */
+}
+
+/* === KOYU TEMA (VARSAYILAN) MARKA RENKLERİ === */
+/* Standart Durum: Kare arka planı marka renginde, İkon beyaz. */
+
+.btn-social:nth-child(1) i { background-color: #FF0000; color: #ffffff; } /* YouTube */
+.btn-social:nth-child(2) i { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #ffffff; } /* Instagram */
+.btn-social:nth-child(3) i { background-color: #25D366; color: #ffffff; } /* WhatsApp */
+.btn-social:nth-child(4) i { background-color: #333333; color: #ffffff; } /* Github */
+.btn-social:nth-child(5) i { background-color: #EA4335; color: #ffffff; } /* E-Posta */
+.btn-social:nth-child(6) i { background-color: var(--hover-mavi); color: #ffffff; } /* Web Sitesi */
+
+/* === KOYU TEMA İÇİN HOVER VE FOCUS (TAB) EFEKTLERİ === */
+@media (prefers-color-scheme: dark)
+{
+    .btn-social:hover, .btn-social:focus /* Fareyle üzerine gelindiğinde veya TAB ile odaklanıldığında */
+    {
+        background-color: var(--hover-mavi) !important; /* Butonu web sitesi mavisine boyuyoruz. */
+        border-color: var(--hover-mavi) !important; /* Kenarlığı bütünleştiriyoruz. */
+        color: #ffffff !important; /* Yazı bembeyaz oluyor. */
+        transform: scale(1.05); /* Butonu hafifçe büyütüyoruz. */
+        box-shadow: 0 0 12px rgba(0, 123, 181, 0.6); /* Mavi parlama gölgesi veriyoruz. */
+    }
+
+    /* Koyu Tema İkon Hover'ları (Renk Yer Değiştirmesi) */
+    .btn-social:nth-child(1):hover i, .btn-social:nth-child(1):focus i { background: #ffffff !important; color: #FF0000 !important; } /* YouTube */
+    .btn-social:nth-child(2):hover i, .btn-social:nth-child(2):focus i { background: #ffffff !important; color: #E1306C !important; } /* Instagram (Koyu temada arka plan düz beyaza dönüp ikon rengi pembemsi kırmızıya dönüyor) */
+    .btn-social:nth-child(3):hover i, .btn-social:nth-child(3):focus i { background: #ffffff !important; color: #25D366 !important; } /* WhatsApp */
+    .btn-social:nth-child(4):hover i, .btn-social:nth-child(4):focus i { background: #ffffff !important; color: #333333 !important; } /* Github */
+    .btn-social:nth-child(5):hover i, .btn-social:nth-child(5):focus i { background: #ffffff !important; color: #EA4335 !important; } /* E-Posta */
+    .btn-social:nth-child(6):hover i, .btn-social:nth-child(6):focus i { background: #ffffff !important; color: var(--hover-mavi) !important; } /* Web Sitesi */
+}
+
+
+/* === AÇIK TEMA İÇİN YENİDEN RENKLENDİRME === */
+@media (prefers-color-scheme: light)
+{
+    /* Standart Durum: Açık temada ikon karesi BEYAZ, ikon rengi MARKANIN KENDİ RENGİ olacak. */
+    .btn-social:nth-child(1) i { background-color: #ffffff; color: #FF0000; } /* YouTube */
+    .btn-social:nth-child(2) i { background-color: #ffffff; color: #E1306C; } /* USTANIN EMRİ: Açık temada Instagram ikonu kendi rengi olan koyu pembe tonuna ayarlandı, arka planı beyaz yapıldı. */
+    .btn-social:nth-child(3) i { background-color: #ffffff; color: #25D366; } /* WhatsApp */
+    .btn-social:nth-child(4) i { background-color: #ffffff; color: #333333; } /* Github */
+    .btn-social:nth-child(5) i { background-color: #ffffff; color: #EA4335; } /* E-Posta */
+    .btn-social:nth-child(6) i { background-color: #ffffff; color: var(--hover-mavi); } /* Web Sitesi */
+
+    /* AÇIK TEMA HOVER VE FOCUS (TAB) EFEKTLERİ */
+    /* Açık temada buton hover/focus olduğunda arka plan BEYAZ, kenarlık MAVİ, yazı MAVİ olacak. İkon karesi MARKA RENGİ, ikon rengi BEYAZ olacak. */
+    .btn-social:hover, .btn-social:focus /* Fareyle gelince veya TAB ile odaklanınca */
+    {
+        background-color: #ffffff !important; /* Buton arka planı BEYAZ oluyor. */
+        border-color: var(--hover-mavi) !important; /* MAVİ kenarlık çıkıyor. */
+        color: var(--hover-mavi) !important; /* Yazı rengi MAVİ oluyor. */
+        transform: scale(1.05); /* Butonu büyütüyoruz. */
+        box-shadow: 0 4px 8px rgba(0, 123, 181, 0.2); /* Hafif mavi bir gölge atıyoruz. */
+    }
+
+    /* Açık Tema İkon Hover'ları (Zemin Marka Rengi, İkon Beyaz) */
+    .btn-social:nth-child(1):hover i, .btn-social:nth-child(1):focus i { background: #FF0000 !important; color: #ffffff !important; } /* YouTube */
+    .btn-social:nth-child(2):hover i, .btn-social:nth-child(2):focus i { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important; color: #ffffff !important; } /* Instagram */
+    .btn-social:nth-child(3):hover i, .btn-social:nth-child(3):focus i { background: #25D366 !important; color: #ffffff !important; } /* WhatsApp */
+    .btn-social:nth-child(4):hover i, .btn-social:nth-child(4):focus i { background: #333333 !important; color: #ffffff !important; } /* Github */
+    .btn-social:nth-child(5):hover i, .btn-social:nth-child(5):focus i { background: #EA4335 !important; color: #ffffff !important; } /* E-Posta */
+    .btn-social:nth-child(6):hover i, .btn-social:nth-child(6):focus i { background: var(--hover-mavi) !important; color: #ffffff !important; } /* Web Sitesi */
+}
+
+
+/* === ALTBİLGİ VE TELİF HAKKI BÖLÜMÜ === */
+
+.Gelistirici-Bilgisi, .Telif-Hakki /* Geliştirici ve Telif alanı için ortak stil tanımlıyoruz. */
+{
+    text-align: center; /* Yazıları merkeze hizalıyoruz. */
+    color: var(--text-muted); /* Metni soluk renk yapıyoruz. */
+    font-size: 0.9rem; /* Yazı boyutunu hafif küçültüyoruz. */
+}
+
+.Gelistirici-Bilgisi p, .Telif-Hakki p /* Alt paragrafların boşlukları. */
+{
+    margin: 5px 0; /* Dar dikey boşluk veriyoruz. */
+}
+
+.copyright-link /* Telif hakkı linki hover/focus efekti hazırlığı. */
+{
+    transition: color 0.3s ease; /* Renk geçişi için yumuşaklık veriyoruz. */
+    outline: none; /* TAB ile odaklanıldığında çirkin çerçeveyi siliyoruz. */
+}
+
+.copyright-link:hover, .copyright-link:focus /* Hover veya odaklanma anı. */
+{
+    color: var(--accent-color); /* Metni tema mavisi yapıyoruz. */
+}
+
+::-webkit-scrollbar /* Tarayıcı kaydırma çubuğu genişliği. */
+{
+    width: 10px; /* Kalınlığı 10 piksel yapıyoruz. */
+}
+
+::-webkit-scrollbar-track /* Kaydırma çubuğu yolu. */
+{
+    background: var(--bg-color); /* Arka plana uyduruyoruz. */
+}
+
+::-webkit-scrollbar-thumb /* Tutulan kaydırma parçası. */
+{
+    background: #444444; /* Görünür gri yapıyoruz. */
+    border-radius: 5px; /* Köşelerini yuvarlatıyoruz. */
+}
+
+::-webkit-scrollbar-thumb:hover /* Hover durumu. */
+{
+    background: var(--accent-color); /* Fare üzerine gelince tema mavisine dönüştürüyoruz. */
+}
+
+/* === MOBİL EKRANLAR İÇİN OPTİMİZASYON (600px ve Altı) === */
+@media (max-width: 600px)
+{
+    h1 /* Mobil cihazlarda ana başlığı küçültüyoruz. */
+    {
+        font-size: 2rem; /* Boyutu mobil ekrana sığacak şekilde daraltıyoruz. */
+    }
+    
+    .card /* Bölüm kutularının dolgularını daraltıyoruz. */
+    {
+        padding: 15px; /* İç boşluğu indirerek mobil ekranda yer kazanıyoruz. */
+    }
+    
+    .social-buttons /* Mobil ekranlarda butonların yerleşimini düzenliyoruz. */
+    {
+        flex-direction: column; /* Mobilde butonları zorla yan yana dizmek yerine rahatça alt alta diziyoruz. */
+    }
+    
+    .btn-social /* Mobil ekrandaki alt alta dizilen butonların boyutlarını eski rahat formuna geri getiriyoruz. */
+    {
+        height: 44px; /* Mobilde parmakla basımı kolaylaştırmak için buton yüksekliğini artırıyoruz. */
+        padding: 0 15px 0 0; /* Mobilde sağdan daha fazla boşluk bırakıyoruz. */
+        font-size: 0.95rem; /* Yazı boyutunu mobilde daha okunabilir olması için büyütüyoruz. */
+        justify-content: flex-start; /* Mobilde butonlar genişleyeceği için ikonları ve yazıları sola hizalıyoruz. */
+        width: 100%; /* Mobil cihazlarda taşmayı engellemek için tam ekran genişliği atıyoruz. */
+    }
+    
+    .btn-social i /* Mobilde ikon karesini butonla orantılı olarak yeniden boyutlandırıyoruz. */
+    {
+        width: 44px; /* Buton yüksekliğine eşitleyerek KARE oranını koruyoruz. */
+        height: 100%; /* Yüksekliği tam ayarlıyoruz. */
+        margin-right: 15px; /* Kare alan ile metin arasındaki boşluğu mobilde artırıyoruz. */
+        font-size: 1.3rem; /* Mobilde ikonları da büyütüyoruz. */
+    }
+}

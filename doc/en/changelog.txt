@@ -1,37 +1,47 @@
+v1.7
+* ARCHITECTURE UPDATE: The add-on has been made 100% compatible with NVDA 2026.1, 64-bit architecture, and Python 3.13 standards.
+* IMPROVEMENT: All interface and dialog components have been updated according to the highest-level WCAG accessibility standards for screen readers.
+* FIX: The invalid "PostPopup" call error, which caused NVDA to crash when opening the main chat window and after saving settings, has been completely resolved.
+* IMPROVEMENT: The code infrastructure has been transitioned to a strict modular structure, completely isolating the interface (frontend) and core (backend) logic.
+* IMPROVEMENT: All variable, function, class, and file namings have been reorganized according to PascalCase standards without Turkish characters.
+* UPDATE: Detailed Turkish comments have been added to every single line of the code architecture without exception, maximizing developer readability.
+* UPDATE: The API key retrieval guide has been updated in detail.
+* UPDATE: The readme file has been visually improved and contact information has been added.
+
 v1.6
-- NEW FEATURE: Full multi-language support (Turkish, English, and German) added.
-- IMPROVEMENT: Integrated an advanced language management system that accurately detects the add-on language based on NVDA settings.
-- FIX: Resolved memory management (Garbage Collection) issues that caused windows not to appear.
-- FIX: Completely removed circular import errors in the code architecture.
+* NEW FEATURE: Comprehensive multi-language support (Turkish, English, and German) has been added.
+* IMPROVEMENT: An advanced language management system that automatically and accurately detects the add-on language based on NVDA's language has been integrated.
+* FIX: The memory management (Garbage Collection) issue that sometimes caused windows not to appear on the screen has been resolved.
+* FIX: Circular import errors in the code architecture have been completely cleared.
 
 v1.5.2
-- SECURITY: Settings file (settings.json) moved to NVDA's user configuration folder for better data security.
-- IMPROVEMENT: Settings file is now saved in a readable (indented) JSON format.
+* SECURITY: The settings file (settings.json) has been moved to NVDA's user configuration folder for data security.
+* IMPROVEMENT: The settings file is now saved in a readable (indented) JSON format.
 
 v1.5
-- ARCHITECTURE CHANGE: Code structure moved to a professional modular package system.
-- NEW FEATURE: Added "Options" menu.
-- NEW FEATURE: Settings moved to an advanced window.
-- SECURITY: API Key input masked and "Show/Hide" button added.
-- NEW FEATURE: Added "Move focus to last message" option.
-- NEW FEATURE: Added "Reset to Defaults" button.
-- CONVENIENCE: Added "Open Google Cloud Console in Browser" button to the API Guide.
+* ARCHITECTURE CHANGE: The code structure has been moved from a single file to a professional modular structure.
+* NEW FEATURE: An "Options" menu has been added.
+* NEW FEATURE: Settings have been moved to an advanced window.
+* SECURITY: The API Key input field has been masked, and a "Show/Hide" button has been added.
+* NEW FEATURE: A "Move focus to the last message when a new message arrives" setting has been added.
+* NEW FEATURE: A "Reset to Defaults" button has been added.
+* CONVENIENCE: An "Open Google Cloud Console in Browser" button with a single click has been added to the API Guide window.
 
 v1.4
-- Fixed window resizing and moving issues.
-- Added horizontal scrollbar to the chat list.
-- Added option to toggle timestamps in messages.
+* The window moving and resizing issue has been resolved.
+* A horizontal scrollbar has been added to the chat list.
+* A setting to turn timestamps on or off in messages has been added.
 
 v1.3
-- Added Version History feature.
+* A version history feature has been added.
 
 v1.2
-- Added website link button.
-- Added dynamic year calculation.
+* A copyright button directing to the website has been added.
+* A dynamic year calculation feature has been added.
 
 v1.1
-- Added support for Super Chat, Super Sticker, and Membership events.
-- Added settings persistence.
+* Support for Super Chat, Super Sticker, and Membership notifications has been added.
+* A settings memory feature has been added.
 
 v1.0
-- Initial release.
+* The first version was released.

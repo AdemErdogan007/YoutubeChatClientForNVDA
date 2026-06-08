@@ -1,117 +1,294 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			YouTube Live-Chat-Client - Hilfe
-		</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	
-	<body>
-		<div class="container">
-			<h1>
-				YouTube Live-Chat-Client
-			</h1>
-			<p class="intro">
-				Dieses Add-on ermöglicht es Ihnen, Chat-Nachrichten, Super Chat-Spenden und Mitgliedschaftsereignisse in YouTube-Livestreams über eine barrierefreie Schnittstelle zu verfolgen.
-			</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            YouTube Live-Chat-Client - Hilfe 
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="Baslik">
+                <h1>
+                    YouTube Live-Chat-Client
+                </h1>
+                
+				<p class="intro">
+                    Version : <strong> 1.7 (2026.06.06) </strong>
+                </p>
+                <p class="intro">
+                    Entwickler : <strong> Adem ERDOĞAN </strong>
+                </p>
+                <p class="intro">
+                    Urheberrecht : <strong> Copyright © 2026, Adem ERDOĞAN (Erdoğan Teknoloji ve Programcılık). </strong>
+                </p>
+				<p class="intro">
+                    Dieses Add-on ermöglicht es sehbehinderten Benutzern, den Chat-Verlauf, Super Chat-Spenden und Kanalmitgliedschafts-Benachrichtigungen in YouTube-Livestreams über den NVDA-Screenreader über eine 100 % barrierefreie Oberfläche zu verfolgen.
+                    <br>
+                    <strong>
+                        Vollständig kompatibel mit NVDA 2026.1 und neueren 64-Bit-Versionen.
+                    </strong>
+                </p>
+            </div>
 
-			<div class="card">
-				<h2>
-					Installation und erste Schritte
-				</h2>
-				<ol>
-					<li>
-						Starten Sie NVDA nach der Installation des Add-ons neu.
-					</li>
-					<li>
-						Starten Sie das Add-on, indem Sie die Tasten <kbd> NVDA + Umschalt + STRG + Y </kbd> drücken oder es über das NVDA-Menü "Extras" aufrufen.
-					</li>
-					<li>
-						Beim ersten Start werden Sie aufgefordert, einen <strong> API-Schlüssel </strong> einzugeben. Sie werden automatisch zum Einstellungsfenster weitergeleitet.
-					</li>
-					<li>
-						Fügen Sie Ihren YouTube Data v3 API-Schlüssel von der Google Cloud Console hier ein und klicken Sie auf die Schaltfläche <strong> "Einstellungen speichern" </strong>.
-					</li>
-				</ol>
-			</div>
+            <div class="Ana-Icerik-Alani">
+                <div class="card">
+                    <h2>
+                        Installation und erste Schritte
+                    </h2>
+                    
+					<ol>
+                        <li>
+                            Starten Sie NVDA nach der Installation des Add-ons neu.
+                            <br>
+                            Das Add-on erkennt die Sprache von NVDA (Türkisch, Englisch oder Deutsch) automatisch.
+                        </li>
+                        <li>
+                            Drücken Sie die Tasten <kbd> NVDA + Umschalt + STRG + Y </kbd> oder starten Sie das Add-on über das NVDA-Menü "Werkzeuge".
+                        </li>
+                        <li>
+                            Beim ersten Start werden Sie aufgefordert, einen <strong>API-Schlüssel</strong> einzugeben.
+                            <br>
+                            Das System leitet Sie automatisch zum Einstellungsfenster weiter.
+                        </li>
+                        <li>
+                            Fügen Sie hier den von der Google Cloud Console erhaltenen YouTube Data v3 API-Schlüssel ein und klicken Sie auf die Schaltfläche <strong>"Einstellungen speichern"</strong>.
+                        </li>
+                    </ol>
+                </div>
+				
+                <div class="card">
+                    <h2>
+                        Wie erhält man einen API-Schlüssel? (Detaillierte Anleitung)
+                    </h2>
+                    <p>
+                        Diese Anleitung erklärt Schritt für Schritt, wie Sie den kostenlosen API-Schlüssel erhalten, den das Add-on benötigt, um sich mit YouTube-Chats zu verbinden.
+                        <br>
+                        Auch wenn Sie keine technischen Kenntnisse haben, können Sie Ihren Schlüssel ganz einfach erstellen, indem Sie diese Schritte der Reihe nach befolgen.
+                        <br>
+                        <strong> Hinweis : </strong> Teilen Sie Ihren API-Schlüssel mit niemandem.
+                    </p>
 
-			<div class="card">
-				<h2>
-					Verwendung des Hauptfensters
-				</h2>
-				<ul>
-					<li>
-						<strong> URL-Feld: </strong> Fügen Sie hier den Link des Streams ein, den Sie verfolgen möchten.
-					</li>
-					<li>
-						<strong> Menü "Optionen": </strong> Über dieses Menü können Sie auf Einstellungen, Versionsverlauf, API-Leitfaden, Über und die Website zugreifen.
-					</li>
-					<li>
-						<strong> Start/Stopp: </strong> Steuert den Chat-Verlauf (Stream).
-					</li>
-					<li>
-						<strong> Chat-Liste: </strong> Nachrichten erscheinen hier. Sie können mit den Pfeiltasten darin navigieren.
-					</li>
-				</ul>
-			</div>
+                    <h3> Schritt 1: Bei der Google Cloud Platform anmelden </h3>
+                    <ol>
+                        <li>
+                            Klicken Sie im Add-on auf die Schaltfläche "Google Cloud Console im Browser öffnen" oder gehen Sie in Ihrem Browser auf <a href="https://console.cloud.google.com" target="_blank"> <strong> https://console.cloud.google.com </strong> </a>.
+                        </li>
+                        <li>
+                            Melden Sie sich mit einem bestehenden Google-Konto (Gmail) an.
+                            <br>
+                            Wenn Sie sich zum ersten Mal am System anmelden, wird möglicherweise eine Nutzungsvereinbarung oder ein Begrüßungsbildschirm angezeigt. Bestätigen Sie diese, um fortzufahren.
+                        </li>
+                    </ol>
 
-			<div class="card">
-				<h2>
-					Einstellungsmenü
-				</h2>
-				<ul>
-					<li>
-						<strong> API-Schlüssel: </strong> Wird aus Sicherheitsgründen mit Sternchen angezeigt. Sie können den Inhalt mit der Schaltfläche "Anzeigen" sehen oder mit "Löschen" entfernen.
-					</li>
-					<li>
-						<strong> Zeitstempel: </strong> Legt fest, ob die Uhrzeit am Anfang der Nachrichten angezeigt wird.
-					</li>
-					<li>
-						<strong> Automatisches Vorlesen: </strong> Legt fest, ob NVDA neue Nachrichten automatisch vorliest, sobald sie eintreffen.
-					</li>
-					<li>
-						<strong> Fokus auf letzte Nachricht verschieben: </strong>
-						<span class="important"> Wichtig! </span> Schalten Sie dies aus, wenn Sie alte Nachrichten durchsehen möchten.
-						<br>
-						Wenn aktiviert, springt der Cursor bei jeder neuen Nachricht nach ganz unten.
-					</li>
-					<li>
-						<strong> API-Abfrageintervall: </strong> Legt fest, alle wie viele Sekunden Daten von YouTube abgerufen werden (Standard ist 10 Sekunden).
-					</li>
-					<li>
-						<strong> Auf Standardwerte zurücksetzen: </strong> Setzt alle Einstellungen auf den Zustand der Erstinstallation zurück.
-					</li>
-				</ul>
-			</div>
+                    <h3> Schritt 2: Ein neues Projekt erstellen </h3>
+                    <ol>
+                        <li>
+                            Klicken Sie oben auf dem Bildschirm auf die Schaltfläche "Projekt auswählen" (Select a project). Suchen und klicken Sie oben rechts im geöffneten Fenster auf die Schaltfläche "Neues Projekt" (New Project).
+                        </li>
+                        <li>
+                            Geben Sie im Feld "Projektname" (Project Name) einen einfachen Namen ein, an den Sie sich für das Add-on erinnern können (Zum Beispiel: "NVDA Youtube Chat").
+                        </li>
+                        <li>
+                            Klicken Sie unten auf die Schaltfläche "Erstellen" (Create). Das Erstellen des Projekts kann einige Sekunden dauern. Warten Sie, bis es abgeschlossen ist.
+                        </li>
+                    </ol>
 
-			<div class="footer">
-				<p>
-					<strong> Entwickler: </strong> ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK).
-				</p>
-				<p>
-					<a href="https://erdoganteknoloji.com/" class="copyright-link" target="_blank">
-						Copyright © <span id="copyright-year"> 2025 </span> ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK) Alle Rechte vorbehalten.
-					</a>
-				</p>
-			</div>
-		</div>
+                    <h3> Schritt 3: Die YouTube API aktivieren </h3>
+                    <ol>
+                        <li>
+                            Klicken Sie nach dem Erstellen Ihres Projekts im linken Navigationsmenü auf die Option "APIs & Dienste" (APIs & Services) und dann auf die Registerkarte "Bibliothek" (Library).
+                        </li>
+                        <li>
+                            Geben Sie "YouTube Data API v3" in das angezeigte Suchfeld ein und suchen Sie danach.
+                        </li>
+                        <li>
+                            Klicken Sie in den Suchergebnissen auf den Link "YouTube Data API v3".
+                        </li>
+                        <li>
+                            Klicken Sie auf der geöffneten Seite auf die Schaltfläche "Aktivieren" (Enable).
+                            <br>
+                            Dadurch erhält Ihr erstelltes Projekt die Berechtigung, YouTube-Live-Chat-Daten abzurufen.
+                        </li>
+                    </ol>
 
-		<script>
-			const currentYear = new Date().getFullYear();
-			const baseYear = 2025;
-			const yearSpan = document.getElementById('copyright-year');
-			
-			if (currentYear > baseYear)
-			{
-				yearSpan.textContent = baseYear + " / " + currentYear;
-			}
-			else
-			{
-				yearSpan.textContent = baseYear;
-			}
-		</script>
-	</body>
+                    <h3> Schritt 4: Den API-Schlüssel generieren </h3>
+                    <ol>
+                        <li>
+                            Klicken Sie nach der Aktivierung der API auf der Seite, auf die Sie weitergeleitet wurden, oder im linken Menü auf die Registerkarte "Anmeldedaten" (Credentials).
+                        </li>
+                        <li>
+                            Klicken Sie oben auf dem Bildschirm auf die Schaltfläche "Anmeldedaten erstellen" (Create Credentials).
+                        </li>
+                        <li>
+                            Wählen Sie aus dem kleinen Dropdown-Menü die Option "API-Schlüssel" (API key).
+                        </li>
+                    </ol>
+
+                    <h3> Schritt 5: Den Schlüssel kopieren und dem Add-on hinzufügen </h3>
+                    <ol>
+                        <li>
+                            Auf dem Bildschirm öffnet sich ein Fenster mit der Meldung "API-Schlüssel erstellt", und ein komplexer, langer Code, der mit den Buchstaben "AIza" beginnt, wird angezeigt.
+                        </li>
+                        <li>
+                            Dieser lange Text ist Ihr API-Schlüssel.
+                            <br>
+                            Kopieren Sie ihn, indem Sie auf die Schaltfläche "Kopieren" neben dem Text klicken oder den Text vollständig markieren.
+                        </li>
+                        <li>
+                            Kehren Sie nun zu den NVDA-Add-on-Einstellungen zurück, fügen Sie diesen kopierten Schlüssel in das Feld "Google API-Schlüssel" ein und speichern Sie die Einstellungen.
+                        </li>
+                    </ol>
+
+                    <p>
+                        <strong class="important" style="color: var(--important-color);"> WICHTIGER SICHERHEITSHINWEIS: </strong>
+                        <br>
+                        Dieser Schlüssel ist ganz für Sie persönlich.
+                        Bitte teilen Sie ihn nicht mit anderen oder auf öffentlichen Plattformen.
+                        <br>
+                        Google bietet diesen Dienst für den persönlichen Gebrauch völlig kostenlos an, und das zugewiesene tägliche Kontingent zum Abrufen von Nachrichten reicht für den persönlichen Gebrauch völlig aus.
+                    </p>
+                </div>
+				
+				<div class="card">
+                    <h2>
+                        Verwendung des Hauptfensters
+                    </h2>
+                    
+					<ul>
+                        <li>
+                            <strong> URL-Feld: </strong>
+                            Fügen Sie hier den Link des YouTube-Livestreams ein, den Sie verfolgen möchten.
+                        </li>
+                        <li>
+                            <strong> Optionen-Menü: </strong>
+							Über dieses Menü können Sie schnell auf alle Unterfenster wie Einstellungen, Versionsverlauf, API-Anleitung, Über und Webseite zugreifen.
+                        </li>
+                        <li>
+                            <strong> Start/Stopp: </strong>
+							Startet oder stoppt den Chat-Verlauf.
+                            <br>
+                            Der Verlauf läuft im Hintergrund, ohne NVDA zu belasten.
+                        </li>
+                        <li>
+                            <strong> Chat-Liste: </strong>
+							Eingehende Nachrichten erscheinen hier in einer barrierefreien Liste.
+                            <br>
+                            Sie können mit den Pfeiltasten zwischen den Nachrichten navigieren.
+                        </li>
+                    </ul>
+                </div>
+				
+				<div class="card">
+                    <h2>
+                        Einstellungsmenü
+                    </h2>
+                    <ul>
+                        <li>
+                            <strong> API-Schlüssel: </strong>
+							Wird aus Sicherheitsgründen maskiert (mit Sternchen) angezeigt.
+                            <br>
+							Sie können den Inhalt mit der Schaltfläche "Anzeigen" lesen und mit der Schaltfläche "Löschen" sofort löschen.
+                        </li>
+                        <li>
+                            <strong> Zeitstempel: </strong>
+							Legt fest, ob die Sendezeit am Anfang der Nachrichten geschrieben wird.
+                        </li>
+                        <li>
+                            <strong> Automatisches Vorlesen: </strong>
+							Steuert, ob der Screenreader die Nachricht automatisch vorliest, wenn eine neue Nachricht eintrifft.
+                        </li>
+                        <li>
+                            <strong> Fokus auf letzte Nachricht verschieben: </strong>
+                            <span class="important"> Wichtig! </span>
+							Wenn Sie in der Liste nach oben scrollen, um ältere Nachrichten zu lesen, schalten Sie diese Einstellung aus.
+                            <br>
+                            Wenn sie aktiviert ist, wird der Fokus des Screenreaders bei jeder neuen eingehenden Nachricht zwingend an das Ende der Liste verschoben.
+                        </li>
+                        <li>
+                            <strong> API-Abfrageintervall: </strong>
+							Legt fest, alle wie viel Sekunden Daten von den YouTube-Servern abgerufen werden (Standard ist 10 Sekunden).
+                            <br>
+                            Wenn Sie diesen Wert zu niedrig ansetzen, ist Ihr tägliches API-Limit sehr schnell aufgebraucht.
+                            <br>
+                            Es wird empfohlen, einen Wert im Bereich von 5 bis 15 Sekunden zu verwenden.
+                        </li>
+                        <li>
+                            <strong> Auf Standard zurücksetzen: </strong>
+							Setzt alle vorgenommenen Änderungen zurück und versetzt die Einstellungen wieder in ihren ursprünglichen Installationszustand.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Alt-Bilgi">
+                <div class="card">
+                    <div class="social-buttons-container">
+                        <h2>
+                            Kontakt und Social Media
+                        </h2>
+                        <div class="social-buttons">
+                            <a href="https://youtube.com/@erdoganteknoloji/" class="btn-social" target="_blank">
+                                <i class="fab fa-youtube"></i>
+								YouTube-Kanal
+                            </a>
+                            <a href="https://instagram.com/erdoganteknoloji/" class="btn-social" target="_blank">
+                                <i class="fab fa-instagram"></i>
+								Instagram-Konto
+                            </a>
+                            <a href="https://whatsapp.com/channel/0029VaAHWDT7DAWvB9s8A406/" class="btn-social" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+								WhatsApp-Kanal
+                            </a>
+                            <a href="https://github.com/ademerdogan007/" class="btn-social" target="_blank">
+                                <i class="fab fa-github"></i>
+								GitHub-Konto
+                            </a>
+                            <a href="mailto:erdoganteknoloji.com@gmail.com" class="btn-social">
+                                <i class="fas fa-envelope"></i>
+								E-Mail
+                            </a>
+                            <a href="https://erdoganteknoloji.com.tr/" class="btn-social" target="_blank">
+                                <i class="fas fa-globe"></i>
+								Webseite
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Gelistirici-Bilgisi">
+                    <p>
+                        Entwickler :
+                        <strong> Adem ERDOĞAN </strong>(ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK).
+                    </p>
+                </div>
+                
+                <div class="Telif-Hakki">
+                    <p>
+                        <a href="https://erdoganteknoloji.com.tr/" class="copyright-link" target="_blank">
+                            Copyright © <span id="copyright-year"> 2026 </span> Adem ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK) Alle Rechte vorbehalten.
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const currentYear = new Date().getFullYear();
+            const baseYear = 2026;
+            const yearSpan = document.getElementById('copyright-year');
+            if (currentYear > baseYear)
+            {
+                yearSpan.textContent = baseYear + " / " + currentYear;
+            }
+            else
+            {
+                yearSpan.textContent = baseYear;
+            }
+        </script>
+    </body>
 </html>

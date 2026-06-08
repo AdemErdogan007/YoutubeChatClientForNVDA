@@ -1,117 +1,294 @@
 <!DOCTYPE html>
 <html lang="tr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			YouTube Canlı Sohbet İstemcisi - Yardım 
-		</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	
-	<body>
-		<div class="container">
-			<h1>
-				YouTube Canlı Sohbet İstemcisi
-			</h1>
-			<p class="intro">
-				Bu eklenti, YouTube canlı yayınlarındaki sohbet mesajlarını, Super Chat bağışlarını ve üyelik olaylarını erişilebilir bir arayüz ile takip etmenizi sağlar.
-			</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            YouTube Canlı Sohbet İstemcisi - Yardım 
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="Baslik">
+                <h1>
+                    YouTube Canlı Sohbet İstemcisi
+                </h1>
+                
+				<p class="intro">
+                    Sürüm : <strong> 1.7 (2026.06.06) </strong>
+                </p>
+                <p class="intro">
+                    Geliştirici : <strong> Adem ERDOĞAN </strong>
+                </p>
+                <p class="intro">
+                    Telif Hakkı : <strong> Copyright © 2026, Adem ERDOĞAN (Erdoğan Teknoloji ve Programcılık). </strong>
+                </p>
+				<p class="intro">
+                    Bu eklenti, görme engelli kullanıcıların YouTube canlı yayınlarındaki sohbet mesajlarını, Super Chat bağışlarını ve üyelik olaylarını NVDA ekran okuyucu ile %100 erişilebilir bir arayüz ile takip etmesini sağlar.
+                    <br>
+                    <strong>
+                        NVDA 2026.1 ve üzeri 64-bit sürümlerle tam uyumludur.
+                    </strong>
+                </p>
+            </div>
 
-			<div class="card">
-				<h2>
-					Kurulum ve İlk Adımlar
-				</h2>
-				<ol>
-					<li>
-						Eklentiyi yükledikten sonra NVDA'yı yeniden başlatın.
-					</li>
-					<li>
-						<kbd> NVDA + Shift + CTRL + Y </kbd> tuşlarına basarak veya NVDA Araçlar menüsünden eklentiyi çalıştırın.
-					</li>
-					<li>
-						İlk açılışta <strong> API Anahtarı </strong> girmeniz istenecektir. Sizi otomatik olarak Ayarlar penceresine yönlendirir.
-					</li>
-					<li>
-						Google Cloud Console'dan aldığınız YouTube Data v3 API anahtarını buraya yapıştırın ve <strong> "Ayarları Kaydet" </strong> butonuna basın.
-					</li>
-				</ol>
-			</div>
+            <div class="Ana-Icerik-Alani">
+                <div class="card">
+                    <h2>
+                        Kurulum ve İlk Adımlar
+                    </h2>
+                    
+					<ol>
+                        <li>
+                            Eklentiyi yükledikten sonra NVDA'yı yeniden başlatın.
+                            <br>
+                            Eklenti, NVDA'nın dilini (Türkçe, İngilizce veya Almanca) otomatik olarak algılayacaktır.
+                        </li>
+                        <li>
+                            <kbd> NVDA + Shift + CTRL + Y </kbd> tuşlarına basarak veya NVDA Araçlar menüsünden eklentiyi çalıştırın.
+                        </li>
+                        <li>
+                            İlk açılışta <strong> API Anahtarı </strong> girmeniz istenecektir.
+                            <br>
+                            Sistem sizi otomatik olarak Ayarlar penceresine yönlendirecektir.
+                        </li>
+                        <li>
+                            Google Cloud Console'dan aldığınız YouTube Data v3 API anahtarını buraya yapıştırın ve <strong> "Ayarları Kaydet" </strong> butonuna basın.
+                        </li>
+                    </ol>
+                </div>
+				
+                <div class="card">
+                    <h2>
+                        API Anahtarı Nasıl Alınır? (Detaylı Rehber)
+                    </h2>
+                    <p>
+                        Bu rehber, eklentinin YouTube sohbetlerine bağlanabilmesi için gereken ücretsiz API anahtarını adım adım nasıl alacağınızı anlatmaktadır.
+                        <br>
+                        Hiçbir teknik bilginiz olmasa bile bu adımları sırasıyla takip ederek anahtarınızı kolayca oluşturabilirsiniz.
+                        <br>
+                        <strong> Not : </strong> API anahtarınızı hiç bir kimse ile paylaşmayınız.
+                    </p>
 
-			<div class="card">
-				<h2>
-					Ana Pencere Kullanımı
-				</h2>
-				<ul>
-					<li>
-						<strong> URL Alanı: </strong> Takip etmek istediğiniz yayının linkini buraya yapıştırın.
-					</li>
-					<li>
-						<strong> Seçenekler Menüsü: </strong> Ayarlar, Sürüm Geçmişi, API Rehberi, Hakkında ve Web Sitesi butonlarına bu menüden ulaşabilirsiniz.
-					</li>
-					<li>
-						<strong> Başlat/Durdur: </strong> Sohbet akışını kontrol eder.
-					</li>
-					<li>
-						<strong> Sohbet Listesi: </strong> Mesajlar buraya düşer. Yön tuşları ile gezebilirsiniz.
-					</li>
-				</ul>
-			</div>
+                    <h3> Adım 1: Google Cloud Platform'a Giriş Yapmak </h3>
+                    <ol>
+                        <li>
+                            Eklentideki "Google Cloud Console'u Tarayıcıda Aç" butonuna basın veya tarayıcınızdan <a href="https://console.cloud.google.com" target="_blank"> <strong> https://console.cloud.google.com </strong> </a> adresine gidin.
+                        </li>
+                        <li>
+                            Mevcut bir Google (Gmail) hesabınızla giriş yapın.
+                            <br>
+                            Sisteme ilk kez giriyorsanız ekranda bir sözleşme veya karşılama ekranı çıkabilir, onaylayarak devam edin.
+                        </li>
+                    </ol>
 
-			<div class="card">
-				<h2>
-					Ayarlar Menüsü
-				</h2>
-				<ul>
-					<li>
-						<strong> API Anahtarı: </strong> Güvenlik gereği yıldızlı görünür. "Göster" butonu ile içeriği görebilir, "Sil" butonu ile temizleyebilirsiniz.
-					</li>
-					<li>
-						<strong> Zaman Damgası: </strong> Mesajların başında saatin yazıp yazmayacağını belirler.
-					</li>
-					<li>
-						<strong> Otomatik Seslendirme: </strong> Yeni mesaj geldiğinde NVDA'nın otomatik okuyup okumayacağını belirler.
-					</li>
-					<li>
-						<strong> Odağı Son Mesaja Taşı: </strong>
-						<span class="important"> Önemli! </span> Eğer eski mesajları inceliyorsanız bunu kapatın.
-						<br>
-						Açık olursa her yeni mesajda imleç en alta atar.
-					</li>
-					<li>
-						<strong> API İstek Süresi: </strong> YouTube'dan verilerin kaç saniyede bir çekileceğini belirler (Varsayılan 10 saniye).
-					</li>
-					<li>
-						<strong> Varsayılanlara Dön: </strong> Tüm ayarları ilk kurulum haline getirir.
-					</li>
-				</ul>
-			</div>
+                    <h3> Adım 2: Yeni Bir Proje Oluşturmak </h3>
+                    <ol>
+                        <li>
+                            Ekranın üst kısmında yer alan "Proje Seçin" (Select a project) butonuna tıklayın. Açılan pencerenin sağ üst köşesindeki "Yeni Proje" (New Project) butonunu bulup basın.
+                        </li>
+                        <li>
+                            "Proje Adı" (Project Name) kısmına eklentiyi hatırlayacağınız basit bir isim yazın (Örneğin: "NVDA Youtube Sohbet").
+                        </li>
+                        <li>
+                            Alt kısımdaki "Oluştur" (Create) butonuna basın. Projenin oluşturulması birkaç saniye sürebilir, tamamlanmasını bekleyin.
+                        </li>
+                    </ol>
 
-			<div class="footer">
-				<p>
-					<strong> Geliştirici: </strong> ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK).
-				</p>
-				<p>
-					<a href="https://erdoganteknoloji.com/" class="copyright-link" target="_blank">
-						Copyright © <span id="copyright-year"> 2025 </span> ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK) Tüm Hakları Saklıdır.
-					</a>
-				</p>
-			</div>
-		</div>
+                    <h3> Adım 3: YouTube API'sini Etkinleştirmek </h3>
+                    <ol>
+                        <li>
+                            Projeniz oluştuktan sonra sol taraftaki gezinme menüsünden "API'ler ve Hizmetler" (APIs & Services) seçeneğine, ardından "Kitaplık" (Library) sekmesine tıklayın.
+                        </li>
+                        <li>
+                            Karşınıza çıkan arama kutusuna "YouTube Data API v3" yazın ve aratın.
+                        </li>
+                        <li>
+                            Çıkan arama sonuçlarından "YouTube Data API v3" bağlantısına tıklayın.
+                        </li>
+                        <li>
+                            Açılan sayfada yer alan "Etkinleştir" (Enable) butonuna basın.
+                            <br>
+                            Bu işlem, oluşturduğunuz projenize YouTube canlı sohbet verilerini çekme yetkisi verecektir.
+                        </li>
+                    </ol>
 
-		<script>
-			const currentYear = new Date().getFullYear();
-			const baseYear = 2025;
-			const yearSpan = document.getElementById('copyright-year');
-			
-			if (currentYear > baseYear)
-			{
-				yearSpan.textContent = baseYear + " / " + currentYear;
-			}
-			else
-			{
-				yearSpan.textContent = baseYear;
-			}
-		</script>
-	</body>
+                    <h3> Adım 4: API Anahtarını Üretmek </h3>
+                    <ol>
+                        <li>
+                            API etkinleştirildikten sonra yönlendirildiğiniz sayfada veya sol menüde yer alan "Kimlik Bilgileri" (Credentials) sekmesine tıklayın.
+                        </li>
+                        <li>
+                            Ekranın üst kısmındaki "Kimlik Bilgileri Oluştur" (Create Credentials) butonuna basın.
+                        </li>
+                        <li>
+                            Açılan küçük menüden "API Anahtarı" (API Key) seçeneğini seçin.
+                        </li>
+                    </ol>
+
+                    <h3> Adım 5: Anahtarı Kopyalamak ve Eklentiye Eklemek </h3>
+                    <ol>
+                        <li>
+                            Ekranda "API Anahtarı Oluşturuldu" şeklinde bir pencere açılacak ve "AIza" harfleriyle başlayan karmaşık, uzun bir kod belirecektir.
+                        </li>
+                        <li>
+                            Bu uzun metin sizin API anahtarınızdır.
+                            <br>
+                            Metnin yanındaki kopyala butonuna basarak veya metni tamamen seçerek kopyalayın.
+                        </li>
+                        <li>
+                            Şimdi NVDA eklenti ayarlarına geri dönün ve kopyaladığınız bu anahtarı "Google API Anahtarı" kutusuna yapıştırıp ayarları kaydedin.
+                        </li>
+                    </ol>
+
+                    <p>
+                        <strong class="important" style="color: var(--important-color);"> ÖNEMLİ GÜVENLİK NOTU: </strong>
+                        <br>
+                        Bu anahtar tamamen size özeldir.
+                        Lütfen başkalarıyla veya açık platformlarda paylaşmayın.
+                        <br>
+                        Google bu hizmeti kişisel kullanım için tamamen ücretsiz sunmaktadır ve eklentinin mesaj çekmesi için ayrılan günlük kota kişisel kullanım için fazlasıyla yeterlidir.
+                    </p>
+                </div>
+				
+				<div class="card">
+                    <h2>
+                        Ana Pencere Kullanımı
+                    </h2>
+                    
+					<ul>
+                        <li>
+                            <strong> URL Alanı: </strong>
+                            Takip etmek istediğiniz YouTube canlı yayınının linkini buraya yapıştırın.
+                        </li>
+                        <li>
+                            <strong> Seçenekler Menüsü: </strong>
+							Ayarlar, Sürüm Geçmişi, API Rehberi, Hakkında ve Web Sitesi gibi tüm alt pencerelere bu menüden hızlıca ulaşabilirsiniz.
+                        </li>
+                        <li>
+                            <strong> Başlat/Durdur: </strong>
+							Sohbet akışını başlatır veya durdurur.
+                            <br>
+                            Akış arka planda NVDA'yı yormadan çalışır.
+                        </li>
+                        <li>
+                            <strong> Sohbet Listesi: </strong>
+							Gelen mesajlar erişilebilir bir liste halinde buraya düşer.
+                            <br>
+                            Yön tuşları ile mesajlar arasında gezinebilirsiniz.
+                        </li>
+                    </ul>
+                </div>
+				
+				<div class="card">
+                    <h2>
+                        Ayarlar Menüsü
+                    </h2>
+                    <ul>
+                        <li>
+                            <strong> API Anahtarı: </strong>
+							Güvenlik gereği maskelenmiş (yıldızlı) olarak görünür.
+                            <br>
+							"Göster" butonu ile içeriği okuyabilir, "Sil" butonu ile anında temizleyebilirsiniz.
+                        </li>
+                        <li>
+                            <strong> Zaman Damgası: </strong>
+							Mesajların başında gönderilme saatinin yazıp yazmayacağını belirler.
+                        </li>
+                        <li>
+                            <strong> Otomatik Seslendirme: </strong>
+							Yeni mesaj geldiğinde ekran okuyucunun mesajı otomatik olarak okuyup okumayacağını kontrol eder.
+                        </li>
+                        <li>
+                            <strong> Odağı Son Mesaja Taşı: </strong>
+                            <span class="important"> Önemli! </span>
+							Eğer eski mesajları okumak için listede yukarı çıkıyorsanız bu ayarı kapatın.
+                            <br>
+                            Açık olması durumunda, gelen her yeni mesajda ekran okuyucu odağı zorunlu olarak listenin en sonuna taşır.
+                        </li>
+                        <li>
+                            <strong> API İstek Süresi: </strong>
+							YouTube sunucularından verilerin kaç saniyede bir çekileceğini belirler (Varsayılan 10 saniyedir).
+                            <br>
+                            Bu değeri çok düşük tutarsanız günlük API limitiniz çok kısa sürede dolacaktır.
+                            <br>
+                            5 ila 15 saniye aralığında kullanmanız tavsiye edilir.
+                        </li>
+                        <li>
+                            <strong> Varsayılanlara Dön: </strong>
+							Yaptığınız tüm değişiklikleri sıfırlayarak ayarları ilk kurulum haline geri getirir.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Alt-Bilgi">
+                <div class="card">
+                    <div class="social-buttons-container">
+                        <h2>
+                            İletişim ve Sosyal Medya
+                        </h2>
+                        <div class="social-buttons">
+                            <a href="https://youtube.com/@erdoganteknoloji/" class="btn-social" target="_blank">
+                                <i class="fab fa-youtube"></i>
+								Youtube Kanalı
+                            </a>
+                            <a href="https://instagram.com/erdoganteknoloji/" class="btn-social" target="_blank">
+                                <i class="fab fa-instagram"></i>
+								İnstagram Hesabı
+                            </a>
+                            <a href="https://whatsapp.com/channel/0029VaAHWDT7DAWvB9s8A406/" class="btn-social" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+								WhatsApp Kanalı
+                            </a>
+                            <a href="https://github.com/ademerdogan007/" class="btn-social" target="_blank">
+                                <i class="fab fa-github"></i>
+								Github Hesabı
+                            </a>
+                            <a href="mailto:erdoganteknoloji.com@gmail.com" class="btn-social">
+                                <i class="fas fa-envelope"></i>
+								E-Posta
+                            </a>
+                            <a href="https://erdoganteknoloji.com.tr/" class="btn-social" target="_blank">
+                                <i class="fas fa-globe"></i>
+								Web Sitesi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Gelistirici-Bilgisi">
+                    <p>
+                        Geliştirici :
+                        <strong> Adem ERDOĞAN </strong>(ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK).
+                    </p>
+                </div>
+                
+                <div class="Telif-Hakki">
+                    <p>
+                        <a href="https://erdoganteknoloji.com.tr/" class="copyright-link" target="_blank">
+                            Copyright © <span id="copyright-year"> 2026 </span> Adem ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK) Tüm Hakları Saklıdır.
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const currentYear = new Date().getFullYear();
+            const baseYear = 2026;
+            const yearSpan = document.getElementById('copyright-year');
+            if (currentYear > baseYear)
+            {
+                yearSpan.textContent = baseYear + " / " + currentYear;
+            }
+            else
+            {
+                yearSpan.textContent = baseYear;
+            }
+        </script>
+    </body>
 </html>

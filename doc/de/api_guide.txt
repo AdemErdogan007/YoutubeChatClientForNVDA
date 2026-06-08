@@ -1,13 +1,38 @@
-SO ERHALTEN SIE EINEN YOUTUBE DATA API v3 SCHLÜSSEL
+WIE ERHÄLT MAN EINEN YOUTUBE DATA API v3 SCHLÜSSEL? (DETAILLIERTE ANLEITUNG)
 
-1. Gehen Sie zur Google Cloud Console (console.cloud.google.com) und melden Sie sich mit Ihrem Google-Konto an.
-2. Klicken Sie oben auf "Ein Projekt auswählen" (Select a Project), dann auf "Neues Projekt" (New Project), geben Sie ihm einen Namen und erstellen Sie es.
-3. Gehen Sie im linken Menü zu "APIs & Dienste" (APIs & Services) > "Bibliothek" (Library).
-4. Geben Sie "YouTube Data API v3" in das Suchfeld ein.
-5. Klicken Sie auf das Ergebnis und dann auf die Schaltfläche "Aktivieren" (Enable).
-6. Sobald aktiviert, gehen Sie zum Reiter "Anmeldedaten" (Credentials).
-7. Klicken Sie auf "Anmeldedaten erstellen" (Create Credentials) und wählen Sie "API-Schlüssel" (API Key).
-8. Ein langer Code, der mit "AIza" beginnt, wird angezeigt. Das ist Ihr API-Schlüssel.
-9. Kopieren Sie diesen Schlüssel und fügen Sie ihn in das entsprechende Feld in den Add-on-Einstellungen ein.
+Diese Anleitung erklärt Schritt für Schritt, wie Sie den kostenlosen API-Schlüssel erhalten, den das Add-on benötigt, um sich mit YouTube-Chats zu verbinden.
+Auch wenn Sie keine technischen Kenntnisse haben, können Sie Ihren Schlüssel ganz einfach erstellen, indem Sie diese Schritte der Reihe nach befolgen.
+Hinweis: Teilen Sie Ihren API-Schlüssel mit niemandem.
+ 
+Schritt 1: Bei der Google Cloud Platform anmelden
+1. Klicken Sie im Add-on auf die Schaltfläche "Google Cloud Console im Browser öffnen" oder gehen Sie in Ihrem Browser auf "https://console.cloud.google.com".
+2. Melden Sie sich mit einem bestehenden Google-Konto (Gmail) an.
+Wenn Sie sich zum ersten Mal am System anmelden, wird möglicherweise eine Nutzungsvereinbarung oder ein Begrüßungsbildschirm angezeigt. Bestätigen Sie diese, um fortzufahren.
 
-Hinweis: Teilen Sie Ihren API-Schlüssel nicht mit anderen.
+Schritt 2: Ein neues Projekt erstellen
+1. Klicken Sie oben auf dem Bildschirm auf die Schaltfläche "Projekt auswählen" (Select a project). Suchen und klicken Sie oben rechts im geöffneten Fenster auf die Schaltfläche "Neues Projekt" (New Project).
+2. Geben Sie im Feld "Projektname" (Project Name) einen einfachen Namen ein, an den Sie sich für das Add-on erinnern können (Zum Beispiel: "NVDA Youtube Chat").
+3. Klicken Sie unten auf die Schaltfläche "Erstellen" (Create). Das Erstellen des Projekts kann einige Sekunden dauern. Warten Sie, bis es abgeschlossen ist.
+
+Schritt 3: Die YouTube API aktivieren
+1. Klicken Sie nach dem Erstellen Ihres Projekts im linken Navigationsmenü auf die Option "APIs & Dienste" (APIs & Services) und dann auf die Registerkarte "Bibliothek" (Library).
+2. Geben Sie "YouTube Data API v3" in das angezeigte Suchfeld ein und suchen Sie danach.
+3. Klicken Sie in den Suchergebnissen auf den Link "YouTube Data API v3".
+4. Klicken Sie auf der geöffneten Seite auf die Schaltfläche "Aktivieren" (Enable).
+Dadurch erhält Ihr erstelltes Projekt die Berechtigung, YouTube-Live-Chat-Daten abzurufen.
+
+Schritt 4: Den API-Schlüssel generieren
+1. Klicken Sie nach der Aktivierung der API auf der Seite, auf die Sie weitergeleitet wurden, oder im linken Menü auf die Registerkarte "Anmeldedaten" (Credentials).
+2. Klicken Sie oben auf dem Bildschirm auf die Schaltfläche "Anmeldedaten erstellen" (Create Credentials).
+3. Wählen Sie aus dem kleinen Dropdown-Menü die Option "API-Schlüssel" (API key).
+
+Schritt 5: Den Schlüssel kopieren und dem Add-on hinzufügen
+1. Auf dem Bildschirm öffnet sich ein Fenster mit der Meldung "API-Schlüssel erstellt", und ein komplexer, langer Code, der mit den Buchstaben "AIza" beginnt, wird angezeigt.
+2. Dieser lange Text ist Ihr API-Schlüssel.
+Kopieren Sie ihn, indem Sie auf die Schaltfläche "Kopieren" neben dem Text klicken oder den Text vollständig markieren.
+3. Kehren Sie nun zu den NVDA-Add-on-Einstellungen zurück, fügen Sie diesen kopierten Schlüssel in das Feld "Google API-Schlüssel" ein und speichern Sie die Einstellungen.
+
+WICHTIGER SICHERHEITSHINWEIS: 
+Dieser Schlüssel ist ganz für Sie persönlich.
+Bitte teilen Sie ihn nicht mit anderen oder auf öffentlichen Plattformen.
+Google bietet diesen Dienst für den persönlichen Gebrauch völlig kostenlos an, und das zugewiesene tägliche Kontingent zum Abrufen von Nachrichten reicht für den persönlichen Gebrauch völlig aus.

@@ -1,10 +1,24 @@
 YouTube Live-Chat-Client
-Version: 1.6
+Version: 1.7 (2026.06.06)
 
-Dieses Add-on ermöglicht es sehbehinderten Benutzern, Chat-Nachrichten, Super Chat-Spenden und Mitgliedschaftsmeldungen in YouTube-Livestreams über eine barrierefreie Schnittstelle zu verfolgen.
+ÜBER DAS ADD-ON
+Dieses Add-on ermöglicht es sehbehinderten Benutzern, den Chat-Verlauf, Super Chat-Spenden, Super Sticker-Sendungen und Kanalmitgliedschafts-Benachrichtigungen in YouTube-Livestreams über den NVDA-Screenreader über eine vollständig barrierefreie Oberfläche zu verfolgen. 
 
-Entwickler: ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK).
-Webseite: https://erdoganteknoloji.com/
-Kontakt: erdoganteknoloji.com@gmail.com
+Dieser Client ist vollständig kompatibel mit NVDA 2026.1 und neueren 64-Bit-Versionen. Er ruft Daten leise im Hintergrund ab, ohne die Systemleistung zu beeinträchtigen, und bietet ein unterbrechungsfreies Erlebnis. Es verfügt über erweiterte Funktionen wie das automatische Vorlesen neuer Nachrichten, das Hinzufügen von Zeitstempeln zu Nachrichten, die automatische Fokussierung in der Liste und ein anpassbares API-Abfrageintervall. Darüber hinaus bietet es umfassende mehrsprachige Unterstützung, einschließlich Türkisch, Englisch und Deutsch.
 
+ENTWICKLER
+Adem ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK)
+
+KONTAKT UND SOCIAL MEDIA
+Sie können die untenstehenden Links nutzen, um über unsere Projekte informiert zu bleiben, Unterstützung zu erhalten oder uns zu kontaktieren:
+
+* YouTube-Kanal: 	https://youtube.com/@erdoganteknoloji/
+* Instagram-Konto: 	https://instagram.com/erdoganteknoloji/
+* WhatsApp-Kanal: 	https://whatsapp.com/channel/0029VaAHWDT7DAWvB9s8A406/
+* GitHub-Konto: 	https://github.com/ademerdogan007/
+* E-Mail-Adresse: 	erdoganteknoloji.com@gmail.com
+* Webseite: 		https://erdoganteknoloji.com.tr/
+
+LIZENZINFORMATIONEN
 Diese Software ist Open Source und wird unter der GPL v2-Lizenz vertrieben.
+Copyright © 2026, Adem ERDOĞAN. Alle Rechte vorbehalten.

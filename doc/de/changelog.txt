@@ -1,43 +1,47 @@
+v1.7
+* ARCHITEKTUR-UPDATE: Das Add-on wurde zu 100 % kompatibel mit NVDA 2026.1, der 64-Bit-Architektur und den Python 3.13-Standards gemacht.
+* VERBESSERUNG: Alle Schnittstellen- und Dialogkomponenten wurden gemäß den höchsten WCAG-Richtlinien für Barrierefreiheit für Screenreader aktualisiert.
+* FEHLERBEHEBUNG: Der ungültige Aufruffehler "PostPopup", der beim Öffnen des Haupt-Chat-Fensters und nach dem Speichern der Einstellungen zum Absturz von NVDA führte, wurde vollständig behoben.
+* VERBESSERUNG: Die Code-Infrastruktur wurde auf eine strikt modulare Struktur umgestellt, wodurch die Logik der Benutzeroberfläche (Frontend) und des Kerns (Backend) vollständig isoliert wurde.
+* VERBESSERUNG: Alle Variablen-, Funktions-, Klassen- und Dateinamen wurden gemäß den PascalCase-Standards ohne türkische Zeichen neu organisiert.
+* UPDATE: Der gesamten Code-Architektur wurden ausnahmslos für jede Zeile detaillierte türkische Kommentare hinzugefügt, um die Lesbarkeit für Entwickler zu maximieren.
+* UPDATE: Die Anleitung zum Abrufen des API-Schlüssels wurde detailliert aktualisiert.
+* UPDATE: Die Readme-Datei wurde optisch verbessert und Kontaktinformationen wurden hinzugefügt.
+
 v1.6
-- NEUE FUNKTION: Vollständige Mehrsprachenunterstützung (Türkisch, Englisch und Deutsch) hinzugefügt.
-- VERBESSERUNG: Ein fortschrittliches Sprachverwaltungssystem wurde integriert, das die Sprache des Add-ons automatisch und fehlerfrei basierend auf den NVDA-Einstellungen erkennt.
-- KORREKTUR: Probleme bei der Speicherverwaltung (Garbage Collection), die dazu führten, dass Fenster manchmal nicht angezeigt wurden, wurden behoben.
-- KORREKTUR: Fehler durch zirkuläre Importe (Circular Import) in der Codearchitektur wurden vollständig beseitigt.
+* NEUE FUNKTION: Umfassende mehrsprachige Unterstützung (Türkisch, Englisch und Deutsch) wurde hinzugefügt.
+* VERBESSERUNG: Ein fortschrittliches Sprachverwaltungssystem, das die Sprache des Add-ons automatisch und fehlerfrei basierend auf der NVDA-Sprache erkennt, wurde integriert.
+* FEHLERBEHEBUNG: Das Problem mit der Speicherverwaltung (Garbage Collection), das manchmal dazu führte, dass Fenster nicht auf dem Bildschirm angezeigt wurden, wurde behoben.
+* FEHLERBEHEBUNG: Zirkuläre Importfehler (Circular Import) in der Code-Architektur wurden vollständig beseitigt.
 
 v1.5.2
-- SICHERHEIT: Die Einstellungsdatei (settings.json) wurde zur besseren Datensicherheit in den Benutzerkonfigurationsordner von NVDA (%AppData%\nvda) verschoben.
-- VERBESSERUNG: Die Einstellungsdatei wird nun in einem für Menschen lesbaren (eingerückten) JSON-Format gespeichert.
+* SICHERHEIT: Die Einstellungsdatei (settings.json) wurde zur Datensicherheit in den NVDA-Benutzerkonfigurationsordner verschoben.
+* VERBESSERUNG: Die Einstellungsdatei wird jetzt in einem lesbaren (eingerückten) JSON-Format gespeichert.
 
 v1.5
-- ARCHITEKTURÄNDERUNG: Die Codestruktur wurde von einer einzelnen Datei auf ein professionelles modulares Paketsystem umgestellt.
-- NEUE FUNKTION: Menü "Optionen" zum Hauptbildschirm hinzugefügt, das Zugriff auf Einstellungen, Verlauf und Anleitungen bietet.
-- NEUE FUNKTION: Einstellungen wurden in ein eigenes, erweitertes Fenster verschoben.
-- SICHERHEIT: Eingabefeld für den API-Schlüssel maskiert (Sternchen) und eine funktionierende "Anzeigen/Verbergen"-Schaltfläche hinzugefügt.
-- NEUE FUNKTION: Einstellung "Fokus auf letzte Nachricht verschieben, wenn eine neue Nachricht eintrifft" hinzugefügt. (Verhindert das Verrutschen der Liste beim Lesen alter Nachrichten).
-- NEUE FUNKTION: Schaltfläche "Auf Standardwerte zurücksetzen" für Einstellungen hinzugefügt.
-- KOMFORT: Schaltfläche "Google Cloud Console im Browser öffnen" zum API-Leitfaden hinzugefügt.
-- KORREKTUR: Problem behoben, bei dem das Hauptfenster nach dem Speichern der Einstellungen bei der ersten Installation nicht automatisch geöffnet wurde.
-- VERBESSERUNG: Copyright- und Website-Link-Schaltfläche unter allen Fenstern fixiert.
+* ARCHITEKTURÄNDERUNG: Die Codestruktur wurde von einer einzelnen Datei auf eine professionelle modulare Struktur umgestellt.
+* NEUE FUNKTION: Ein "Optionen"-Menü wurde hinzugefügt.
+* NEUE FUNKTION: Die Einstellungen wurden in ein erweitertes Fenster verschoben.
+* SICHERHEIT: Das Eingabefeld für den API-Schlüssel wurde maskiert und eine "Anzeigen/Verbergen"-Schaltfläche wurde hinzugefügt.
+* NEUE FUNKTION: Die Einstellung "Fokus auf die letzte Nachricht verschieben, wenn eine neue Nachricht eintrifft" wurde hinzugefügt.
+* NEUE FUNKTION: Eine "Auf Standard zurücksetzen"-Schaltfläche wurde hinzugefügt.
+* KOMFORT: Eine Schaltfläche "Google Cloud Console im Browser öffnen" wurde mit einem Klick zum API-Leitfaden-Fenster hinzugefügt.
 
 v1.4
-- Probleme beim Ändern der Größe und Verschieben von Fenstern behoben.
-- Sichergestellt, dass Informationsnachrichten in die nächste Zeile umbrechen, wenn sie nicht in das Fenster passen.
-- Horizontale Bildlaufleiste zur Chatliste hinzugefügt.
-- Einstellung zum Ein-/Ausschalten von Zeitstempeln in Nachrichten hinzugefügt.
+* Das Problem beim Verschieben und Ändern der Fenstergröße wurde behoben.
+* Der Chat-Liste wurde eine horizontale Bildlaufleiste hinzugefügt.
+* Eine Einstellung zum Ein- oder Ausschalten des Zeitstempels in Nachrichten wurde hinzugefügt.
 
 v1.3
-- Versionsverlauf-Funktion hinzugefügt.
-- Name der Kategorie für Eingabegesten aktualisiert.
+* Die Funktion "Versionsverlauf" wurde hinzugefügt.
 
 v1.2
-- Schaltfläche zur Weiterleitung auf die Website hinzugefügt.
-- Funktion zur dynamischen Jahresberechnung hinzugefügt.
-- Versionsnummer zum Fenstertitel hinzugefügt.
+* Eine Copyright-Schaltfläche, die zur Webseite weiterleitet, wurde hinzugefügt.
+* Eine Funktion zur dynamischen Jahresberechnung wurde hinzugefügt.
 
 v1.1
-- Unterstützung für Super Chat, Super Sticker und Mitgliedschaftsbenachrichtigungen hinzugefügt.
-- Funktion zum Speichern von Einstellungen hinzugefügt.
-- Anleitung zum Abrufen des API-Schlüssels hinzugefügt.
+* Unterstützung für Super Chat, Super Sticker und Mitgliedschaftsbenachrichtigungen wurde hinzugefügt.
+* Eine Funktion zum Merken von Einstellungen wurde hinzugefügt.
 
 v1.0
-- Erstveröffentlichung.
+* Die erste Version wurde veröffentlicht.

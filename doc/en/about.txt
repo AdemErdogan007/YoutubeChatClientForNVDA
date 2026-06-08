@@ -1,10 +1,25 @@
 YouTube Live Chat Client
-Version: 1.6
+Version: 1.7 (2026.06.06)
 
-This add-on allows visually impaired users to track chat messages, Super Chat donations, and membership notifications in YouTube live streams via an accessible interface.
+ABOUT
+This add-on allows visually impaired users to track the YouTube live stream chat flow, Super Chat donations, Super Sticker sends, and channel membership notifications via the NVDA screen reader through a fully accessible interface. 
+Fully compatible with NVDA 2026.1 and later 64-bit versions, this client fetches data silently in the background, ensuring an uninterrupted experience without affecting your system performance. 
+It includes advanced features such as automatically reading new incoming messages aloud, adding timestamps to messages, automatic focus on the list, and customizable API request intervals. 
+Additionally, it has comprehensive multi-language support, including Turkish, English, and German.
 
-Developer: ADEM ERDOGAN (ERDOGAN TEKNOLOJI VE PROGRAMCILIK).
-Website: https://erdoganteknoloji.com/
-Contact: erdoganteknoloji.com@gmail.com
+DEVELOPER
+Adem ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK)
 
-This software is open source and distributed under the GPL v2 license.
+CONTACT AND SOCIAL MEDIA
+You can use the links below to stay informed about our projects, get support, or contact us:
+
+* YouTube Channel: 	https://youtube.com/@erdoganteknoloji/
+* Instagram Account: 	https://instagram.com/erdoganteknoloji/
+* WhatsApp Channel: 	https://whatsapp.com/channel/0029VaAHWDT7DAWvB9s8A406/
+* Github Account: 	https://github.com/ademerdogan007/
+* E-Mail Address: 	erdoganteknoloji.com@gmail.com
+* Website: 		https://erdoganteknoloji.com.tr/
+
+LICENSE INFORMATION
+This software is open-source and distributed under the GPL v2 license.
+Copyright © 2026, Adem ERDOĞAN. All Rights Reserved.

@@ -1,10 +1,26 @@
 Youtube Canlı Sohbet İstemcisi
-Sürüm: 1.6
+Sürüm: 1.7 (2026.06.06)
 
-Bu eklenti, görme engelli kullanıcıların YouTube canlı yayınlarındaki sohbet akışını, Super Chat bağışlarını ve üyelik bildirimlerini erişilebilir bir şekilde takip etmelerini sağlar.
+HAKKINDA
+Bu eklenti, görme engelli kullanıcıların YouTube canlı yayınlarındaki sohbet akışını, Super Chat bağışlarını, Super Sticker gönderimlerini ve kanal üyeliği bildirimlerini NVDA ekran okuyucusu aracılığıyla, tam erişilebilir bir arayüz üzerinden takip etmelerini sağlar. 
 
-Geliştirici: ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK).
-Web Site: https://erdoganteknoloji.com/
-İletişim: erdoganteknoloji.com@gmail.com
+NVDA 2026.1 ve sonrası 64-bit sürümlerle tam uyumlu olarak çalışan bu istemci, arka planda sessizce veri çekerek sistem performansınızı etkilemez ve kesintisiz bir deneyim sunar.
+Gelen yeni mesajları otomatik olarak seslendirme, mesajlara zaman damgası ekleme, listede otomatik odaklanma ve kişiselleştirilebilir API istek süresi gibi gelişmiş özellikler barındırır.
+Ayrıca Türkçe, İngilizce ve Almanca olmak üzere tam kapsamlı çoklu dil desteğine sahiptir.
 
+GELİŞTİRİCİ
+Adem ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK)
+
+İLETİŞİM VE SOSYAL MEDYA
+Projelerimizden haberdar olmak, destek almak veya bizimle iletişime geçmek için aşağıdaki bağlantıları kullanabilirsiniz:
+
+* YouTube Kanalı: 	https://youtube.com/@erdoganteknoloji/
+* Instagram Hesabı: 	https://instagram.com/erdoganteknoloji/
+* WhatsApp Kanalı: 	https://whatsapp.com/channel/0029VaAHWDT7DAWvB9s8A406/
+* Github Hesabı: 	https://github.com/ademerdogan007/
+* E-Posta Adresi: 	erdoganteknoloji.com@gmail.com
+* Web Sitesi: 		https://erdoganteknoloji.com.tr/
+
+LİSANS BİLGİSİ
 Bu yazılım açık kaynak kodludur ve GPL v2 lisansı ile dağıtılmaktadır.
+Copyright © 2026, Adem ERDOĞAN. Tüm Hakları Saklıdır.

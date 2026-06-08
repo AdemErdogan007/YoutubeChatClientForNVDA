@@ -1,13 +1,38 @@
-HOW TO GET A YOUTUBE DATA API v3 KEY?
+HOW TO GET A YOUTUBE DATA API v3 KEY? (DETAILED GUIDE)
 
-1. Go to Google Cloud Console (console.cloud.google.com) and sign in with your Google account.
-2. Click 'Select a Project' at the top, then click 'New Project', give it a name, and create it.
-3. From the left menu, go to 'APIs & Services' > 'Library'.
-4. Type 'YouTube Data API v3' in the search box.
-5. Click on the result and click the 'Enable' button.
-6. Once enabled, go to the 'Credentials' tab.
-7. Click 'Create Credentials' and select 'API Key'.
-8. A long code starting with 'AIza' will appear. This is your API key.
-9. Copy this key and paste it into the relevant field in the add-on settings.
+This guide explains step-by-step how to get the free API key required for the add-on to connect to YouTube chats.
+Even if you have no technical knowledge, you can easily create your key by following these steps in order.
+Note: Do not share your API key with anyone.
+ 
+Step 1: Logging into Google Cloud Platform
+1. Click the "Open Google Cloud Console in Browser" button in the add-on or go to "https://console.cloud.google.com" in your browser.
+2. Log in with an existing Google (Gmail) account.
+If you are logging into the system for the first time, a terms of service or welcome screen may appear; confirm to continue.
 
-Note: Do not share your API key with others.
+Step 2: Creating a New Project
+1. Click the "Select a project" button at the top of the screen. Find and click the "New Project" button in the top right corner of the window that opens.
+2. In the "Project Name" field, type a simple name to help you remember the add-on (For example: "NVDA Youtube Chat").
+3. Click the "Create" button at the bottom. Creating the project may take a few seconds; wait for it to complete.
+
+Step 3: Enabling the YouTube API
+1. After your project is created, click on "APIs & Services" from the left navigation menu, then click the "Library" tab.
+2. Type "YouTube Data API v3" into the search box that appears and search.
+3. Click on the "YouTube Data API v3" link from the search results.
+4. Click the "Enable" button on the page that opens.
+This process will grant your created project the authorization to fetch YouTube live chat data.
+
+Step 4: Generating the API Key
+1. After the API is enabled, click on the "Credentials" tab on the page you are redirected to or in the left menu.
+2. Click the "Create Credentials" button at the top of the screen.
+3. Select the "API key" option from the small menu that opens.
+
+Step 5: Copying the Key and Adding It to the Add-on
+1. A window saying "API key created" will open on the screen, and a complex, long code starting with the letters "AIza" will appear.
+2. This long text is your API key.
+Copy it by clicking the copy button next to the text or by selecting the text completely.
+3. Now return to the NVDA add-on settings, paste this copied key into the "Google API Key" box, and save the settings.
+
+IMPORTANT SECURITY NOTE: 
+This key is completely private to you.
+Please do not share it with others or on public platforms.
+Google provides this service completely free of charge for personal use, and the daily quota allocated for the add-on to fetch messages is more than sufficient for personal use.

@@ -1,13 +1,38 @@
-YOUTUBE DATA API v3 ANAHTARI NASIL ALINIR?
+YOUTUBE DATA API v3 ANAHTARI NASIL ALINIR? (DETAYLI REHBER)
 
-1. Google Cloud Console adresine gidin (console.cloud.google.com) ve Google hesabınızla giriş yapın.
-2. Üst kısımdan 'Select a Project' diyerek 'New Project' butonuna basın ve projeye bir isim verip oluşturun.
-3. Sol menüden 'APIs & Services' > 'Library' kısmına gidin.
-4. Arama kutusuna 'YouTube Data API v3' yazın.
-5. Çıkan sonuca tıklayın ve 'Enable' (Etkinleştir) butonuna basın.
-6. Etkinleştirdikten sonra 'Credentials' (Kimlik Bilgileri) sekmesine gidin.
-7. 'Create Credentials' butonuna tıklayın ve 'API Key' seçeneğini seçin.
-8. Ekranda 'AIza' ile başlayan uzun bir kod belirecek. Bu sizin API anahtarınızdır.
-9. Bu anahtarı kopyalayıp eklentideki ilgili alana yapıştırın.
+Bu rehber, eklentinin YouTube sohbetlerine bağlanabilmesi için gereken ücretsiz API anahtarını adım adım nasıl alacağınızı anlatmaktadır.
+Hiçbir teknik bilginiz olmasa bile bu adımları sırasıyla takip ederek anahtarınızı kolayca oluşturabilirsiniz.
+Not : API anahtarınızı hiç bir kimse ile paylaşmayınız.
+ 
+Adım 1: Google Cloud Platform'a Giriş Yapmak
+1. Eklentideki "Google Cloud Console'u Tarayıcıda Aç" butonuna basın veya tarayıcınızdan "https://console.cloud.google.com" adresine gidin.
+2. Mevcut bir Google (Gmail) hesabınızla giriş yapın.
+Sisteme ilk kez giriyorsanız ekranda bir sözleşme veya karşılama ekranı çıkabilir, onaylayarak devam edin.
 
-Not: API anahtarınızı başkalarıyla paylaşmayın.
+Adım 2: Yeni Bir Proje Oluşturmak
+1. Ekranın üst kısmında yer alan "Proje Seçin" (Select a project) butonuna tıklayın. Açılan pencerenin sağ üst köşesindeki "Yeni Proje" (New Project) butonunu bulup basın.
+2. "Proje Adı" (Project Name) kısmına eklentiyi hatırlayacağınız basit bir isim yazın (Örneğin: "NVDA Youtube Sohbet").
+3. Alt kısımdaki "Oluştur" (Create) butonuna basın. Projenin oluşturulması birkaç saniye sürebilir, tamamlanmasını bekleyin.
+
+Adım 3: YouTube API'sini Etkinleştirmek
+1. Projeniz oluştuktan sonra sol taraftaki gezinme menüsünden "API'ler ve Hizmetler" (APIs & Services) seçeneğine, ardından "Kitaplık" (Library) sekmesine tıklayın.
+2. Karşınıza çıkan arama kutusuna "YouTube Data API v3" yazın ve aratın.
+3. Çıkan arama sonuçlarından "YouTube Data API v3" bağlantısına tıklayın.
+4. Açılan sayfada yer alan "Etkinleştir" (Enable) butonuna basın.
+Bu işlem, oluşturduğunuz projenize YouTube canlı sohbet verilerini çekme yetkisi verecektir.
+
+Adım 4: API Anahtarını Üretmek
+1. API etkinleştirildikten sonra yönlendirildiğiniz sayfada veya sol menüde yer alan "Kimlik Bilgileri" (Credentials) sekmesine tıklayın.
+2. Ekranın üst kısmındaki "Kimlik Bilgileri Oluştur" (Create Credentials) butonuna basın.
+3. Açılan küçük menüden "API Anahtarı" (API Key) seçeneğini seçin.
+
+Adım 5: Anahtarı Kopyalamak ve Eklentiye Eklemek
+1. Ekranda "API Anahtarı Oluşturuldu" şeklinde bir pencere açılacak ve "AIza" harfleriyle başlayan karmaşık, uzun bir kod belirecektir.
+2. Bu uzun metin sizin API anahtarınızdır.
+Metnin yanındaki kopyala butonuna basarak veya metni tamamen seçerek kopyalayın.
+3. Şimdi NVDA eklenti ayarlarına geri dönün ve kopyaladığınız bu anahtarı "Google API Anahtarı" kutusuna yapıştırıp ayarları kaydedin.
+
+ÖNEMLİ GÜVENLİK NOTU: 
+Bu anahtar tamamen size özeldir.
+Lütfen başkalarıyla veya açık platformlarda paylaşmayın.
+Google bu hizmeti kişisel kullanım için tamamen ücretsiz sunmaktadır ve eklentinin mesaj çekmesi için ayrılan günlük kota kişisel kullanım için fazlasıyla yeterlidir.

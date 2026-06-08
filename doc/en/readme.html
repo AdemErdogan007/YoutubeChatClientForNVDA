@@ -1,116 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>
-			YouTube Live Chat Client - Help 
-		</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	
-	<body>
-		<div class="container">
-			<h1>
-				YouTube Live Chat Client
-			</h1>
-			<p class="intro">
-				This plugin allows you to track chat messages, Super Chat donations, and membership events in YouTube live broadcasts with an accessible interface.
-			</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            YouTube Live Chat Client - Help 
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="Baslik">
+                <h1>
+                    YouTube Live Chat Client
+                </h1>
+                
+				<p class="intro">
+                    Version: <strong> 1.7 (2026.06.06) </strong>
+                </p>
+                <p class="intro">
+                    Developer: <strong> Adem ERDOĞAN </strong>
+                </p>
+                <p class="intro">
+                    Copyright: <strong> Copyright © 2026, Adem ERDOĞAN (Erdoğan Teknoloji ve Programcılık). </strong>
+                </p>
+				<p class="intro">
+                    This add-on allows visually impaired users to track YouTube live stream chat messages, Super Chat donations, and membership events via the NVDA screen reader with a 100% accessible interface.
+                    <br>
+                    <strong>
+                        Fully compatible with NVDA 2026.1 and later 64-bit versions.
+                    </strong>
+                </p>
+            </div>
 
-			<div class="card">
-				<h2>
-					Installation and First Steps
-				</h2>
-				<ol>
-					<li>
-						Restart NVDA after installing the plug-in.
-					</li>
-					<li>
-						Run the plug-in by pressing <kbd> NVDA + Shift + CTRL + Y </kbd> or from the NVDA Tools menu.
-					</li>
-					<li>
-						You will be asked to enter <strong>API Key</strong> at first startup. It will automatically redirect you to the Settings window.
-					</li>
-					<li>
-						Paste the YouTube Data v3 API key you received from the Google Cloud Console here and press the <strong> "Save Settings"</strong> button.
-					</li>
-				</ol>
-			</div>
+            <div class="Ana-Icerik-Alani">
+                <div class="card">
+                    <h2>
+                        Installation and First Steps
+                    </h2>
+                    
+					<ol>
+                        <li>
+                            Restart NVDA after installing the add-on.
+                            <br>
+                            The add-on will automatically detect NVDA's language (Turkish, English, or German).
+                        </li>
+                        <li>
+                            Press the <kbd> NVDA + Shift + CTRL + Y </kbd> keys or run the add-on from the NVDA Tools menu.
+                        </li>
+                        <li>
+                            You will be asked to enter an <strong>API Key</strong> on the first launch.
+                            <br>
+                            The system will automatically direct you to the Settings window.
+                        </li>
+                        <li>
+                            Paste the YouTube Data v3 API key you obtained from the Google Cloud Console here and press the <strong>"Save Settings"</strong> button.
+                        </li>
+                    </ol>
+                </div>
+				
+                <div class="card">
+                    <h2>
+                        How to Get an API Key? (Detailed Guide)
+                    </h2>
+                    <p>
+                        This guide explains step-by-step how to get the free API key required for the add-on to connect to YouTube chats.
+                        <br>
+                        Even if you have no technical knowledge, you can easily create your key by following these steps in order.
+                        <br>
+                        <strong> Note: </strong> Do not share your API key with anyone.
+                    </p>
 
-			<div class="card">
-				<h2>
-					Main Window Usage
-				</h2>
-				<ul>
-					<li>
-						<strong> URL Field: </strong> Paste the link of the publication you want to follow here.
-					</li>
-					<li>
-						<strong> Options Menu: </strong> You can access Settings, Version History, API Guide, About and Website buttons from this menu.
-					</li>
-					<li>
-						<strong> Start/Stop: </strong> Controls the chat flow.
-					</li>
-					<li>
-						<strong> Chat List: </strong> Messages fall here. You can navigate with the arrow keys.
-					</li>
-				</ul>
-			</div>
+                    <h3> Step 1: Logging into Google Cloud Platform </h3>
+                    <ol>
+                        <li>
+                            Click the "Open Google Cloud Console in Browser" button in the add-on or go to <a href="https://console.cloud.google.com" target="_blank"> <strong> https://console.cloud.google.com </strong> </a> in your browser.
+                        </li>
+                        <li>
+                            Log in with an existing Google (Gmail) account.
+                            <br>
+                            If you are logging into the system for the first time, a terms of service or welcome screen may appear; confirm to continue.
+                        </li>
+                    </ol>
 
-			<div class="card">
-				<h2>
-					Settings Menu
-				</h2>
-				<ul>
-					<li>
-						<strong> API Key: </strong> Appears with an asterisk for security reasons. You can see the content with the "Show" button and clear it with the "Delete" button.
-					</li>
-					<li>
-						<strong> Timestamp: </strong> Determines whether the time will be written at the beginning of the messages.
-					</li>
-					<li>
-						<strong> Automatic Voice: </strong> Determines whether NVDA will automatically read a new message when it arrives.
-					</li>
-					<li>
-						<strong>Move Focus to Last Message:</strong>
-						<span class="important"> Important! </span> If you are reviewing old messages, turn this off.
-						<br>
-						If it is on, the cursor moves to the bottom with each new message.
-					</li>
-					<li>
-						<strong> API Request Duration: </strong> Determines how many seconds data will be retrieved from YouTube (Default 10 seconds).
-					</li>
-					<li>
-						<strong>Reset to Defaults:</strong>Resets all settings to initial setup.
-					</li>
-				</ul>
-			</div>
+                    <h3> Step 2: Creating a New Project </h3>
+                    <ol>
+                        <li>
+                            Click the "Select a project" button at the top of the screen. Find and click the "New Project" button in the top right corner of the window that opens.
+                        </li>
+                        <li>
+                            In the "Project Name" field, type a simple name to help you remember the add-on (For example: "NVDA Youtube Chat").
+                        </li>
+                        <li>
+                            Click the "Create" button at the bottom. Creating the project may take a few seconds; wait for it to complete.
+                        </li>
+                    </ol>
 
-			<div class="footer">
-				<p>
-					<strong> Developer: </strong> ADEM ERDOĞAN (ERDOĞAN TECHNOLOGY AND PROGRAMMING).</p>
-				<p>
-					<a href="https://erdoganteknoloji.com/" class="copyright-link" target=" blank">
-						Copyright © <span id="copyright-year"> 2025 </span> ADEM ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK) Tüm Hakları Saklıdır.
-					</a>
-				</p>
-			</div>
-		</div>
+                    <h3> Step 3: Enabling the YouTube API </h3>
+                    <ol>
+                        <li>
+                            After your project is created, click on "APIs & Services" from the left navigation menu, then click the "Library" tab.
+                        </li>
+                        <li>
+                            Type "YouTube Data API v3" into the search box that appears and search.
+                        </li>
+                        <li>
+                            Click on the "YouTube Data API v3" link from the search results.
+                        </li>
+                        <li>
+                            Click the "Enable" button on the page that opens.
+                            <br>
+                            This process will grant your created project the authorization to fetch YouTube live chat data.
+                        </li>
+                    </ol>
 
-		<script>
-			const currentYear = new Date().getFullYear();
-			const baseYear = 2025;
-			const yearSpan = document.getElementById('copyright-year');
-			
-			if (currentYear > baseYear)
-			{
-				yearSpan.textContent = baseYear + " / " + currentYear;
-			}
-			else
-			{
-				yearSpan.textContent = baseYear;
-			}
-		</script>
-	</body>
+                    <h3> Step 4: Generating the API Key </h3>
+                    <ol>
+                        <li>
+                            After the API is enabled, click on the "Credentials" tab on the page you are redirected to or in the left menu.
+                        </li>
+                        <li>
+                            Click the "Create Credentials" button at the top of the screen.
+                        </li>
+                        <li>
+                            Select the "API key" option from the small menu that opens.
+                        </li>
+                    </ol>
+
+                    <h3> Step 5: Copying the Key and Adding It to the Add-on </h3>
+                    <ol>
+                        <li>
+                            A window saying "API key created" will open on the screen, and a complex, long code starting with the letters "AIza" will appear.
+                        </li>
+                        <li>
+                            This long text is your API key.
+                            <br>
+                            Copy it by clicking the copy button next to the text or by selecting the text completely.
+                        </li>
+                        <li>
+                            Now return to the NVDA add-on settings, paste this copied key into the "Google API Key" box, and save the settings.
+                        </li>
+                    </ol>
+
+                    <p>
+                        <strong class="important" style="color: var(--important-color);"> IMPORTANT SECURITY NOTE: </strong>
+                        <br>
+                        This key is completely private to you.
+                        Please do not share it with others or on public platforms.
+                        <br>
+                        Google provides this service completely free of charge for personal use, and the daily quota allocated for the add-on to fetch messages is more than sufficient for personal use.
+                    </p>
+                </div>
+				
+				<div class="card">
+                    <h2>
+                        Main Window Usage
+                    </h2>
+                    
+					<ul>
+                        <li>
+                            <strong> URL Field: </strong>
+                            Paste the link of the YouTube live stream you want to track here.
+                        </li>
+                        <li>
+                            <strong> Options Menu: </strong>
+							You can quickly access all sub-windows such as Settings, Version History, API Guide, About, and Website from this menu.
+                        </li>
+                        <li>
+                            <strong> Start/Stop: </strong>
+							Starts or stops the chat flow.
+                            <br>
+                            The flow works in the background without straining NVDA.
+                        </li>
+                        <li>
+                            <strong> Chat List: </strong>
+							Incoming messages fall here in an accessible list.
+                            <br>
+                            You can navigate between messages using the arrow keys.
+                        </li>
+                    </ul>
+                </div>
+				
+				<div class="card">
+                    <h2>
+                        Settings Menu
+                    </h2>
+                    <ul>
+                        <li>
+                            <strong> API Key: </strong>
+							Appears masked (asterisks) for security reasons.
+                            <br>
+							You can read the content with the "Show" button, and instantly clear it with the "Clear" button.
+                        </li>
+                        <li>
+                            <strong> Timestamp: </strong>
+							Determines whether the send time is written at the beginning of the messages.
+                        </li>
+                        <li>
+                            <strong> Auto Read: </strong>
+							Controls whether the screen reader automatically reads the message when a new message arrives.
+                        </li>
+                        <li>
+                            <strong> Move Focus to Last Message: </strong>
+                            <span class="important"> Important! </span>
+							If you are scrolling up the list to read older messages, turn this setting off.
+                            <br>
+                            If turned on, the screen reader focus will forcibly be moved to the end of the list with every new incoming message.
+                        </li>
+                        <li>
+                            <strong> API Request Interval: </strong>
+							Determines how often in seconds data will be fetched from YouTube servers (Default is 10 seconds).
+                            <br>
+                            If you keep this value too low, your daily API limit will be exhausted very quickly.
+                            <br>
+                            It is recommended to use it in the range of 5 to 15 seconds.
+                        </li>
+                        <li>
+                            <strong> Reset to Defaults: </strong>
+							Resets all your changes, returning the settings to their initial installation state.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Alt-Bilgi">
+                <div class="card">
+                    <div class="social-buttons-container">
+                        <h2>
+                            Contact and Social Media
+                        </h2>
+                        <div class="social-buttons">
+                            <a href="https://youtube.com/@erdoganteknoloji/" class="btn-social" target="_blank">
+                                <i class="fab fa-youtube"></i>
+								YouTube Channel
+                            </a>
+                            <a href="https://instagram.com/erdoganteknoloji/" class="btn-social" target="_blank">
+                                <i class="fab fa-instagram"></i>
+								Instagram Account
+                            </a>
+                            <a href="https://whatsapp.com/channel/0029VaAHWDT7DAWvB9s8A406/" class="btn-social" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+								WhatsApp Channel
+                            </a>
+                            <a href="https://github.com/ademerdogan007/" class="btn-social" target="_blank">
+                                <i class="fab fa-github"></i>
+								Github Account
+                            </a>
+                            <a href="mailto:erdoganteknoloji.com@gmail.com" class="btn-social">
+                                <i class="fas fa-envelope"></i>
+								E-Mail
+                            </a>
+                            <a href="https://erdoganteknoloji.com.tr/" class="btn-social" target="_blank">
+                                <i class="fas fa-globe"></i>
+								Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Gelistirici-Bilgisi">
+                    <p>
+                        Developer:
+                        <strong> Adem ERDOĞAN </strong>(ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK).
+                    </p>
+                </div>
+                
+                <div class="Telif-Hakki">
+                    <p>
+                        <a href="https://erdoganteknoloji.com.tr/" class="copyright-link" target="_blank">
+                            Copyright © <span id="copyright-year"> 2026 </span> Adem ERDOĞAN (ERDOĞAN TEKNOLOJİ VE PROGRAMCILIK) All Rights Reserved.
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const currentYear = new Date().getFullYear();
+            const baseYear = 2026;
+            const yearSpan = document.getElementById('copyright-year');
+            if (currentYear > baseYear)
+            {
+                yearSpan.textContent = baseYear + " / " + currentYear;
+            }
+            else
+            {
+                yearSpan.textContent = baseYear;
+            }
+        </script>
+    </body>
 </html>
